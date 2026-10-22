@@ -1,0 +1,59 @@
+name: Phase 0 probe (feeds, Gemini models, TTS)
+
+# Run by hand after setup, and whenever a feed seems broken. Commits state/feed_probe.json and
+# uploads a 20-second voice sample so you can hear the voice before the first episode.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      TZ: Europe/Brussels
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: Probe feeds and Gemini models
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python -m dailybrief.cli probe
+
+      - name: Voice sample
+        run: |
+          python - <<'EOF'
+          from pathlib import Path
+          from dailybrief import audio
+          from dailybrief.config import load
+          cfg = load()
+          text = ("Good morning, this is your Daily Brief. In today's episode: a new AI model, "
+                  "the federal budget talks, and what Elia expects for this winter. Let's start with AI.")
+          out = Path("build/voice-sample.mp3")
+          audio.edge_synthesizer(cfg.audio["voice"], cfg.audio["rate"])(text, out)
+          print(out, out.stat().st_size, "bytes", audio.duration_seconds(out, cfg.audio["bitrate_kbps"]), "s")
+          EOF
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: voice-sample
+          path: build/voice-sample.mp3
+
+      - name: Commit probe result
+        run: |
+          git config user.name "daily-brief-bot"
+          git config user.email "daily-brief-bot@users.noreply.github.com"
+          git add state/feed_probe.json
+          if ! git diff --cached --quiet; then
+            git commit -m "state: feed probe $(date +%Y-%m-%d) [skip ci]"
+            git push
+          fi

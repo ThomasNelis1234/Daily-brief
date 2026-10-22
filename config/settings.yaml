@@ -1,0 +1,44 @@
+# Non-secret configuration. Secrets (VERCEL_TOKEN, GEMINI_API_KEY) live only in GitHub Secrets.
+timezone: Europe/Brussels
+
+show:
+  title: "Daily Brief"
+  description: "A 15-minute weekday briefing on AI, politics (Belgium, EU, world) and energy, written by Claude for one listener."
+  author: "Daily Brief"
+  language: en
+  # Fallback only: the publish workflow reads the real production domain from the Vercel project.
+  # A repository variable SITE_URL overrides both.
+  site_url: "https://daily-brief-tnelis.vercel.app"
+
+episode:
+  words_min: 1700
+  words_max: 2600
+  # Order matters: sections must appear in this order. Intro and Outro are optional.
+  sections:
+    - {key: ai, heading: "AI", min_words: 400, min_sources: 2}
+    - {key: politics, heading: "Politics", min_words: 400, min_sources: 2}
+    - {key: energy, heading: "Energy", min_words: 300, min_sources: 2}
+    - {key: term, heading: "Term of the day", min_words: 60, min_sources: 0}
+  optional_sections:
+    - {key: intro, heading: "Intro"}
+    - {key: outro, heading: "Outro"}
+  weekdays: [0, 1, 2, 3, 4]        # Monday = 0
+
+audio:
+  voice: "en-GB-RyanNeural"
+  rate: "+0%"
+  bitrate_kbps: 48                 # edge-tts default output: 24 kHz mono 48 kbit/s MP3
+
+publish:
+  keep_episodes: 10
+  max_site_mb: 90                  # Vercel Hobby CLI upload limit is 100 MB
+
+vercel:
+  project: "daily-brief-tnelis"
+
+fallback:
+  after_local: "06:30"             # the Gemini backup never writes before this local time
+  lookback_hours: 30               # Monday: since Friday morning (78 h)
+  lookback_hours_monday: 78
+  max_items_per_feed: 8
+  gemini_models: ["gemini-flash-latest", "gemini-flash-lite-latest"]

@@ -1,0 +1,70 @@
+name: Backup writer and publish safety net
+
+# Runs twice each weekday morning (04:40 and 05:40 UTC = 06:40/07:40 summer, 05:40/06:40 winter).
+# - Today's script exists but is not live yet (e.g. the publish dispatch failed) → publish it.
+# - No script after 06:30 Brussels and a GEMINI_API_KEY secret exists → write a backup episode from
+#   RSS feeds with the Gemini free tier, commit it, publish it.
+# - Otherwise do nothing.
+
+on:
+  schedule:
+    - cron: "40 4,5 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Ignore the time gate and weekday check"
+        type: boolean
+        default: false
+
+concurrency:
+  group: daily-brief-fallback
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      TZ: Europe/Brussels
+    outputs:
+      needs_publish: ${{ steps.fallback.outputs.needs_publish }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: pip install pyyaml requests
+
+      - name: Check today's episode (write a backup if needed)
+        id: fallback
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          ARGS=""
+          if [ "${{ inputs.force }}" = "true" ]; then ARGS="--force"; fi
+          python -m dailybrief.cli fallback $ARGS
+
+      - name: Commit backup episode
+        if: steps.fallback.outputs.wrote == 'true'
+        run: |
+          git config user.name "daily-brief-bot"
+          git config user.email "daily-brief-bot@users.noreply.github.com"
+          git add episodes
+          git commit -m "episode $(date +%Y-%m-%d): backup script (Gemini) [skip ci]"
+          git pull --rebase --autostash origin main
+          git push
+
+  publish:
+    needs: check
+    if: needs.check.outputs.needs_publish == 'true'
+    uses: ./.github/workflows/publish.yml
+    secrets: inherit

@@ -1,0 +1,114 @@
+name: Publish episodes
+
+# Turns the committed scripts into MP3s, builds feed.xml + index.html and deploys them to Vercel.
+# Dispatched by the Claude scheduled task after it commits today's script, called by fallback.yml,
+# or run by hand (Actions → "Publish episodes" → Run workflow).
+# Without a VERCEL_TOKEN secret the site is uploaded as an artefact instead (nothing is marked published).
+
+on:
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: "Why (shown in the log)"
+        type: string
+        default: "manual"
+  workflow_call:
+
+concurrency:
+  group: daily-brief-publish
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TZ: Europe/Brussels
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: Run tests
+        run: python -m unittest discover -s tests -t . -q
+
+      - name: Restore audio cache
+        uses: actions/cache@v4
+        with:
+          path: build/audio
+          key: audio-${{ hashFiles('episodes/**/script.md', 'config/settings.yaml') }}
+          restore-keys: audio-
+
+      - name: Link Vercel project
+        id: vercel
+        run: |
+          if [ -z "$VERCEL_TOKEN" ]; then
+            echo "No VERCEL_TOKEN secret: building only, site will be uploaded as an artefact."
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          mkdir -p site
+          python -m dailybrief.cli vercel-setup --site site
+          URL="${{ vars.SITE_URL }}"
+          if [ -z "$URL" ]; then URL=$(python -m dailybrief.cli vercel-domain || true); fi
+          echo "Site URL before build: ${URL:-<unknown yet, using config>}"
+          echo "site_url=$URL" >> "$GITHUB_OUTPUT"
+          echo "enabled=true" >> "$GITHUB_OUTPUT"
+
+      - name: Build site (audio, feed, index)
+        env:
+          SITE_URL: ${{ steps.vercel.outputs.site_url }}
+        run: |
+          mkdir -p build
+          ARGS="--out site"
+          if [ "${{ steps.vercel.outputs.enabled }}" != "true" ]; then ARGS="$ARGS --no-state"; fi
+          python -m dailybrief.cli publish $ARGS | tee build/publish.json
+
+      - name: Deploy to Vercel
+        if: steps.vercel.outputs.enabled == 'true'
+        run: |
+          cd site && npx --yes vercel@latest deploy --prod --yes --token "$VERCEL_TOKEN"
+          cd ..
+          # First deploy of a new project: the production domain only exists now. If the feed was built
+          # with a different URL, rebuild (audio is cached) and deploy once more.
+          ACTUAL=$(python -m dailybrief.cli vercel-domain || true)
+          BUILT=$(python -c "import json;print(json.load(open('build/publish.json'))['site_url'])")
+          echo "Production URL: $ACTUAL"
+          if [ -n "$ACTUAL" ] && [ "$ACTUAL" != "$BUILT" ] && [ -z "${{ vars.SITE_URL }}" ]; then
+            echo "Feed was built for $BUILT, rebuilding for $ACTUAL"
+            SITE_URL="$ACTUAL" python -m dailybrief.cli publish --out site
+            cd site && npx --yes vercel@latest deploy --prod --yes --token "$VERCEL_TOKEN"
+          fi
+          echo "### Podcast feed: ${ACTUAL:-$BUILT}/feed.xml" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload site (no Vercel yet)
+        if: steps.vercel.outputs.enabled != 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: site/
+          retention-days: 7
+
+      - name: Commit publish state
+        if: success() && steps.vercel.outputs.enabled == 'true'
+        run: |
+          git config user.name "daily-brief-bot"
+          git config user.email "daily-brief-bot@users.noreply.github.com"
+          git add state/published.json
+          if ! git diff --cached --quiet; then
+            git commit -m "state: published $(date +%Y-%m-%d) [skip ci]"
+            git pull --rebase --autostash origin main
+            git push
+          fi
