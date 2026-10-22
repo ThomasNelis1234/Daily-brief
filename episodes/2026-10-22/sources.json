@@ -1,0 +1,237 @@
+{
+  "date": "2026-10-22",
+  "sources": [
+    {
+      "id": "S1",
+      "section": "ai",
+      "title": "Claude Duet app is Anthropic's bet on agents",
+      "publisher": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/",
+      "date": "2026-10-22"
+    },
+    {
+      "id": "S2",
+      "section": "ai",
+      "title": "Claude Duet is Anthropic's answer to Meta Muse and OpenAI Dots",
+      "publisher": "Engadget",
+      "url": "https://www.engadget.com/2293646/claude-duet-is-anthropics-answer-to-meta-muse-and-openai-dots/",
+      "date": "2026-10-21"
+    },
+    {
+      "id": "S3",
+      "section": "ai",
+      "title": "OpenAI agents disabled safety monitoring, one lied about it",
+      "publisher": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/openai-agents-disabled-safety-monitoring-one-lied-about-it/",
+      "date": "2026-10-21"
+    },
+    {
+      "id": "S4",
+      "section": "ai",
+      "title": "OpenAI Agents Silenced Security Team Alerts, Removed Misalignment Monitor",
+      "publisher": "SecurityWeek",
+      "url": "https://www.securityweek.com/openai-agents-silenced-security-team-alerts-removed-misalignment-monitor/",
+      "date": "2026-10-21"
+    },
+    {
+      "id": "S5",
+      "section": "ai",
+      "title": "Walmart lets AI agents buy within customer-set limits such as $50 or $100",
+      "publisher": "PPC Land",
+      "url": "https://ppc.land/walmart-lets-ai-agents-buy-within-customer-set-limits-such-as-50-or-100/",
+      "date": "2026-10-22"
+    },
+    {
+      "id": "S6",
+      "section": "ai",
+      "title": "Anthropic pitches AI safety bill that may block a model if 50+ people could be killed",
+      "publisher": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
+      "date": "2026-10-20"
+    },
+    {
+      "id": "S7",
+      "section": "ai",
+      "title": "US orders federal agencies to remove China's DeepSeek AI from their systems",
+      "publisher": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/",
+      "date": "2026-10-20"
+    },
+    {
+      "id": "S29",
+      "section": "ai",
+      "title": "Notion AI: more for less",
+      "publisher": "Notion",
+      "url": "https://www.notion.com/blog/notion-ai-more-for-less",
+      "date": "2026-10-19"
+    },
+    {
+      "id": "S8",
+      "section": "politics",
+      "title": "LIVE Kernkabinet uiteen zonder begrotingsakkoord",
+      "publisher": "VRT NWS",
+      "url": "https://www.vrt.be/vrtnws/nl/liveblog/kernkabinet-uiteen-zonder-begrotingsakkoord-vooruit-zal-huid-d~1790599460224/",
+      "date": "2026-10-21"
+    },
+    {
+      "id": "S9",
+      "section": "politics",
+      "title": "LIVE Premier De Wever: kern zal tijdens parlementaire recesweek doorwerken",
+      "publisher": "VRT NWS",
+      "url": "https://www.vrt.be/vrtnws/nl/liveblog/premier-de-wever-kern-zal-tijdens-parlementaire-recesweek-door~1790599460224/",
+      "date": "2026-10-21"
+    },
+    {
+      "id": "S10",
+      "section": "politics",
+      "title": "Budget fédéral : Frank Vandenbroucke ne s'attend pas à un accord cette nuit",
+      "publisher": "BX1",
+      "url": "https://bx1.be/categories/news/budget-federal-frank-vandenbroucke-ne-sattend-pas-a-un-accord-cette-nuit",
+      "date": "2026-10-21"
+    },
+    {
+      "id": "S11",
+      "section": "politics",
+      "title": "Belgium's €10 billion budget talk: What happened in the weekend?",
+      "publisher": "The Brussels Times",
+      "url": "https://brusselstimes.com/belgium/2346711/belgiums-e10-billion-budget-talk-what-happened-in-the-weekend/",
+      "date": "2026-10-06"
+    },
+    {
+      "id": "S12",
+      "section": "politics",
+      "title": "Brussels goes back to the drawing board on Europe-wide taxes",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/2026/10/21/brussels-goes-back-to-the-drawing-board-on-europe-wide-taxes",
+      "date": "2026-10-21"
+    },
+    {
+      "id": "S13",
+      "section": "politics",
+      "title": "Budget, Ukraine, migration: Five takeaways from the EU leaders' summit",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/2026/10/16/budget-ukraine-migration-five-takeaways-from-the-eu-leaders-summit",
+      "date": "2026-10-16"
+    },
+    {
+      "id": "S14",
+      "section": "politics",
+      "title": "International Criminal Court wins EU's 2026 Sakharov prize (Reuters)",
+      "publisher": "Internazionale / Reuters",
+      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/10/22/international-criminal-court-wins-eu-s-2026-sakharov-prize",
+      "date": "2026-10-22"
+    },
+    {
+      "id": "S15",
+      "section": "politics",
+      "title": "Putin tells Witkoff he is ready to resume direct peace talks, Russia releases U.S. detainee",
+      "publisher": "Axios",
+      "url": "https://www.axios.com/2026/10/21/russia-ukraine-putin-witkoff-peace",
+      "date": "2026-10-21"
+    },
+    {
+      "id": "S16",
+      "section": "politics",
+      "title": "What happened during Witkoff and Kushner's latest meeting with Putin",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/10/21/what-happened-during-witkoff-and-kushners-latest-meeting-with-putin",
+      "date": "2026-10-21"
+    },
+    {
+      "id": "S17",
+      "section": "politics",
+      "title": "Russia strikes Kyiv with three cluster-warhead ballistic missiles, Zelenskyy says",
+      "publisher": "Euronews",
+      "url": "https://euronews.com/2026/10/22/russia-reportedly-strikes-central-kyiv-with-cluster-warhead-ballistic-missile-designed-to-",
+      "date": "2026-10-22"
+    },
+    {
+      "id": "S18",
+      "section": "politics",
+      "title": "Trump says AI data centres should pay 'dividends' in pre-midterm shift",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/10/21/trump-says-ai-data-centres-should-pay-dividends-in-pre-midterm-shift",
+      "date": "2026-10-21"
+    },
+    {
+      "id": "S19",
+      "section": "energy",
+      "title": "EU Natural Gas – Price – News",
+      "publisher": "Trading Economics",
+      "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
+      "date": "2026-10-22"
+    },
+    {
+      "id": "S20",
+      "section": "energy",
+      "title": "European gas price benchmark at highest level since 2022",
+      "publisher": "The Brussels Times",
+      "url": "https://www.brusselstimes.com/belgium/2358528/european-gas-price-benchmark-at-highest-level-since-2022",
+      "date": "2026-10-13"
+    },
+    {
+      "id": "S21",
+      "section": "energy",
+      "title": "EU gas system prepared for the winter despite lower storage levels",
+      "publisher": "European Commission (DG Energy)",
+      "url": "https://energy.ec.europa.eu/news/eu-gas-system-prepared-winter-despite-lower-storage-levels-2026-10-08_en",
+      "date": "2026-10-08"
+    },
+    {
+      "id": "S22",
+      "section": "energy",
+      "title": "Winter energy bills: Where are gas and electricity prices highest in Europe?",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/2026/10/14/winter-energy-bills-where-are-gas-and-electricity-prices-highest-in-europe",
+      "date": "2026-10-14"
+    },
+    {
+      "id": "S23",
+      "section": "energy",
+      "title": "ETS splits EU leaders and tests bloc's climate goals",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/2026/10/16/ets-splits-eu-leaders-and-tests-blocs-climate-goals",
+      "date": "2026-10-16"
+    },
+    {
+      "id": "S24",
+      "section": "energy",
+      "title": "40 West-Vlaamse bedrijven kunnen compensatie krijgen voor hoogspanningslijn Ventilus",
+      "publisher": "VRT NWS",
+      "url": "https://vrt.be/vrtnws/nl/2026/10/16/bedrijven-gecompenseerd-elia-compensatie-40-bedrijven-west-vlaan",
+      "date": "2026-10-16"
+    },
+    {
+      "id": "S25",
+      "section": "energy",
+      "title": "Energy complaints double over supplier Eneco",
+      "publisher": "The Brussels Times",
+      "url": "https://www.brusselstimes.com/belgium/2366762/energy-complaints-double-over-supplier-eneco",
+      "date": "2026-10-18"
+    },
+    {
+      "id": "S26",
+      "section": "energy",
+      "title": "The Belgian State and ENGIE Group have agreed to extend the target date for concluding the Heads of Terms until 4 November 2026",
+      "publisher": "MarketScreener (ENGIE release)",
+      "url": "https://www.marketscreener.com/news/the-belgian-state-and-engie-group-have-agreed-to-extend-the-target-date-for-concluding-the-heads-of-ce785ad3d98ff42d",
+      "date": "2026-09-30"
+    },
+    {
+      "id": "S27",
+      "section": "energy",
+      "title": "Rabot Energy secures $50M to transform homes into a virtual power plant",
+      "publisher": "Tech.eu",
+      "url": "https://tech.eu/2026/10/15/rabot-energy-secures-50m-to-transform-homes-into-a-virtual-power-plant/",
+      "date": "2026-10-15"
+    },
+    {
+      "id": "S28",
+      "section": "energy",
+      "title": "Rabot Energy raises 50M in Series B",
+      "publisher": "High-Tech Gründerfonds",
+      "url": "https://www.htgf.de/en/rabot-energy-raises-50m-in-series-b/",
+      "date": "2026-10-15"
+    }
+  ]
+}
