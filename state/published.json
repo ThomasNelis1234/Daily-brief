@@ -1,1 +1,9 @@
-{}
+{
+  "2026-10-22": {
+    "published_at": "2026-10-22T22:39:31+02:00",
+    "writer": "claude",
+    "script_sha": "af0860f224b4380cf4090e39c649c454f6e38eb486ccee822c2f863aa52a1737",
+    "duration_s": 717,
+    "bytes": 4302432
+  }
+}
