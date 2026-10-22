@@ -11,7 +11,7 @@ The research prompt the scheduled task runs: [docs/workspace-task.md](docs/works
 
 | When (Brussels) | Where | What |
 |---|---|---|
-| 05:19 | Claude scheduled task (your Claude plan) | researches, writes `episodes/<date>/script.md` + `sources.json`, validates, commits, dispatches publish |
+| 05:05 | Claude scheduled task (your Claude plan) | researches, writes `episodes/<date>/script.md` + `sources.json`, validates, commits, dispatches publish |
 | ~05:45 | GitHub Actions `publish.yml` | MP3 with edge-tts, `feed.xml` + `index.html`, deploy to Vercel |
 | 06:40 | GitHub Actions `fallback.yml` | safety net: publishes an unpublished script, or writes a Gemini backup episode if none exists |
 

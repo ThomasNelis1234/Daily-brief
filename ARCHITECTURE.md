@@ -12,7 +12,7 @@ AI news (~5 min), politics — Belgium, EU, world (~5 min), energy — Belgium a
 and a one-minute "term of the day". Each episode has show notes with every source link.
 
 ```
-05:19 Brussels  Claude scheduled task (your Claude plan, no API key)
+05:05 Brussels  Claude scheduled task (your Claude plan, no API key)
                   web research ─► episodes/<date>/script.md + sources.json
                   ─► validate (python -m dailybrief.cli validate) ─► commit ─► dispatch publish.yml
                                                 │

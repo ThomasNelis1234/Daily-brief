@@ -1,6 +1,6 @@
 # Stage 1 — daily research and script (Claude scheduled task)
 
-A scheduled task in the author's Claude workspace (Claude plan, no API key) runs every weekday at 05:19
+A scheduled task in the author's Claude workspace (Claude plan, no API key) runs every weekday at 05:05
 Europe/Brussels. It researches the news, writes `episodes/<date>/script.md` + `sources.json`, validates them,
 commits, and dispatches `.github/workflows/publish.yml`, which makes the audio and updates the podcast feed.
 If this task does not run, `.github/workflows/fallback.yml` publishes a Gemini backup episode at 06:40.
