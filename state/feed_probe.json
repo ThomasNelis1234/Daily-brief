@@ -1,0 +1,115 @@
+{
+  "probed_at": "2026-10-22T22:25+02:00",
+  "feeds": [
+    {
+      "feed": "Simon Willison",
+      "section": "ai",
+      "ok": true,
+      "items": 30,
+      "recent": 5
+    },
+    {
+      "feed": "OpenAI News",
+      "section": "ai",
+      "ok": true,
+      "items": 1315,
+      "recent": 5
+    },
+    {
+      "feed": "Google DeepMind",
+      "section": "ai",
+      "ok": true,
+      "items": 100,
+      "recent": 1
+    },
+    {
+      "feed": "Latent Space",
+      "section": "ai",
+      "ok": true,
+      "items": 20,
+      "recent": 3
+    },
+    {
+      "feed": "TechCrunch AI",
+      "section": "ai",
+      "ok": true,
+      "items": 20,
+      "recent": 18
+    },
+    {
+      "feed": "The Verge AI",
+      "section": "ai",
+      "ok": true,
+      "items": 10,
+      "recent": 10
+    },
+    {
+      "feed": "VRT NWS",
+      "section": "politics",
+      "ok": true,
+      "items": 50,
+      "recent": 45
+    },
+    {
+      "feed": "The Brussels Times",
+      "section": "politics",
+      "ok": false,
+      "error": "mismatched tag: line 59, column 805"
+    },
+    {
+      "feed": "Politico Europe",
+      "section": "politics",
+      "ok": true,
+      "items": 10,
+      "recent": 10
+    },
+    {
+      "feed": "Euractiv",
+      "section": "politics",
+      "ok": true,
+      "items": 100,
+      "recent": 57
+    },
+    {
+      "feed": "BBC World",
+      "section": "politics",
+      "ok": true,
+      "items": 39,
+      "recent": 38
+    },
+    {
+      "feed": "BBC Europe",
+      "section": "politics",
+      "ok": true,
+      "items": 23,
+      "recent": 11
+    },
+    {
+      "feed": "Euractiv Energy & Environment",
+      "section": "energy",
+      "ok": false,
+      "error": "403 Client Error: Forbidden for url: https://www.rapporteur.com/sections/energy-environment/feed/"
+    },
+    {
+      "feed": "Carbon Brief",
+      "section": "energy",
+      "ok": true,
+      "items": 12,
+      "recent": 1
+    },
+    {
+      "feed": "Sifted",
+      "section": "energy",
+      "ok": true,
+      "items": 24,
+      "recent": 7
+    },
+    {
+      "feed": "Electrek",
+      "section": "energy",
+      "ok": true,
+      "items": 100,
+      "recent": 27
+    }
+  ]
+}
