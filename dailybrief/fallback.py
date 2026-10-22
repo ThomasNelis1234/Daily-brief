@@ -18,8 +18,8 @@ not in the items; when an item gives only a headline, say only what the headline
 Write natural spoken British English: short sentences, no lists, no URLs, no markdown, no source codes like [1].
 Name the outlet when you report something ("Politico reports that..."). Explain jargon briefly.
 
-Lengths (words): intro 40-70, ai 550-700, politics 550-700, energy 400-550, term 90-140, outro 30-60.
-Total 1800-2300 words. In "ai", end with one sentence on why the main story matters for a product manager.
+Lengths (words): intro 40-70, ai 650-800, politics 650-800, energy 500-650, term 100-150, outro 30-60.
+Total 2200-2700 words. In "ai", end with one sentence on why the main story matters for a product manager.
 "politics" goes Belgium first, then the EU, then the world. "term" explains one technical term from today's
 AI or energy news in plain words, with an everyday example. "intro" greets the listener and names the date
 and the three headline stories. "outro" is a short sign-off.

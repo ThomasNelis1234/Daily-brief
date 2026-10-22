@@ -2,6 +2,7 @@
 # - research_domains: where the Claude research task searches first (it may use other reputable outlets).
 # - feeds: RSS/Atom feeds used only by the Gemini backup writer. Verified by probe.yml (Phase 0);
 #   a feed that fails is skipped at run time, so a broken URL never blocks an episode.
+#   Probe 2026-10-22: 14/16 OK; removed The Brussels Times (invalid XML) and Euractiv energy (403).
 
 ai:
   research_domains:
@@ -39,7 +40,6 @@ politics:
     - apnews.com
   feeds:
     - {name: "VRT NWS", url: "https://www.vrt.be/vrtnws/nl.rss.articles.xml"}
-    - {name: "The Brussels Times", url: "https://www.brusselstimes.com/feed"}
     - {name: "Politico Europe", url: "https://www.politico.eu/feed/"}
     - {name: "Euractiv", url: "https://www.euractiv.com/feed/"}
     - {name: "BBC World", url: "https://feeds.bbci.co.uk/news/world/rss.xml"}
@@ -59,7 +59,6 @@ energy:
     - acer.europa.eu
     - entsoe.eu
   feeds:
-    - {name: "Euractiv Energy & Environment", url: "https://www.euractiv.com/sections/energy-environment/feed/"}
     - {name: "Carbon Brief", url: "https://www.carbonbrief.org/feed/"}
     - {name: "Sifted", url: "https://sifted.eu/feed"}
     - {name: "Electrek", url: "https://electrek.co/feed/"}

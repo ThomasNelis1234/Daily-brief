@@ -12,7 +12,7 @@ show:
 
 episode:
   words_min: 1700
-  words_max: 2600
+  words_max: 3000
   # Order matters: sections must appear in this order. Intro and Outro are optional.
   sections:
     - {key: ai, heading: "AI", min_words: 400, min_sources: 2}

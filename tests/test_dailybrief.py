@@ -81,7 +81,7 @@ class ValidateTests(Base):
     def test_valid_episode(self):
         r = check(epmod.load(self.make()), self.cfg)
         self.assertTrue(r["ok"], r["errors"])
-        self.assertGreater(r["estimated_minutes"], 11)
+        self.assertGreater(r["estimated_minutes"], 9)
 
     def test_rejects_urls_citations_bullets(self):
         secs = valid_sections()

@@ -84,7 +84,7 @@ Rules checked by `validate` (configured in `config/settings.yaml`):
 
 - header date matches the folder, title and summary present;
 - sections AI, Politics, Energy and Term of the day present, in that order, each above its minimum word count;
-- total 1,700–2,600 words (~12–17 minutes at the voice's pace);
+- total 1,700–3,000 words (the voice reads ~175 words per minute; the prompt aims for 2,200–2,700, about 13–15 minutes);
 - spoken text only: no URLs, markdown links, bullets, tables or `[S1]`-style citations;
 - every news section has at least two sources; every source has a valid `https` URL and a known section.
 
@@ -106,8 +106,8 @@ Without a `VERCEL_TOKEN` secret it uploads `site/` as a workflow artefact instea
 The development workspace cannot reach PyPI, Microsoft's TTS endpoint, the RSS feeds or Vercel, so these are
 verified in GitHub Actions:
 
-- [ ] `edge-tts` synthesises in Actions (publish.yml log shows MP3 size and duration)
-- [ ] RSS feeds respond (`probe.yml` writes `state/feed_probe.json`); fix or drop failing feeds in `config/sources.yaml`
+- [x] `edge-tts` synthesises in Actions (2026-10-22: pilot episode, ~3.9 MB; voice reads ~175 words/min)
+- [x] RSS feeds respond (2026-10-22: 14/16 OK, the two failing feeds removed)
 - [ ] Gemini model IDs in `config/settings.yaml` exist on the free tier (`probe.yml` lists the available models when `GEMINI_API_KEY` is set)
 - [ ] `vercel link --project` creates the project and the domain lookup returns `<project>.vercel.app`
 - [ ] Apple Podcasts accepts the feed URL ("Follow a Show by URL")

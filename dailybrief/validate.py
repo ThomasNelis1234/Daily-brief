@@ -100,7 +100,7 @@ def check(ep: Episode, cfg: Config) -> dict:
             warnings.append(f"source {label}: url listed twice")
         seen_urls.add(url)
 
-    minutes = total / 150
+    minutes = total / 175  # measured: en-GB-RyanNeural reads ~175 words per minute
     return {
         "date": ep.id,
         "ok": not errors,
