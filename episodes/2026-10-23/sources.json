@@ -1,0 +1,149 @@
+{
+ "date": "2026-10-23",
+ "sources": [
+  {
+   "id": "S1",
+   "section": "ai",
+   "title": "LiteLLM Compromised in Supply Chain Attack Delivering Credential Stealer and Backdoor",
+   "publisher": "The Hacker News",
+   "url": "https://thehackernews.com/2026/10/litellm-compromised-in-supply-chain.html",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "S2",
+   "section": "ai",
+   "title": "LiteLLM 1.107.0 Compromised: Credential Stealer",
+   "publisher": "Mend.io",
+   "url": "https://www.mend.io/blog/litellm-1-107-0-compromised/",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "S3",
+   "section": "ai",
+   "title": "LiteLLM attacked again: Malicious 1.107.0 wheels on PyPI and Docker Hub (October 2026)",
+   "publisher": "Chainguard",
+   "url": "https://www.chainguard.dev/unchained/litellm-attacked-again-malicious-1-107-0-wheels-on-pypi-and-docker-hub-october-2026",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "S4",
+   "section": "ai",
+   "title": "Meta Q3 2026 earnings: revenue up 26% to $64.6B",
+   "publisher": "StockTitan",
+   "url": "https://www.stocktitan.net/news/META/meta-reports-third-quarter-2026-13ysmyjaxliq.html",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "S5",
+   "section": "ai",
+   "title": "Earnings call transcript: Meta beats Q3 2026 estimates as AI push lifts shares",
+   "publisher": "Investing.com",
+   "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-meta-beats-q3-2026-estimates-as-ai-push-lifts-shares-93CH-4964260",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "S6",
+   "section": "ai",
+   "title": "TechCrunch Disrupt 2026: AI Gets Specific on the Expo Floor",
+   "publisher": "HyperFRAME Research",
+   "url": "https://hyperframeresearch.com/2026/10/22/techcrunch-disrupt-2026-ai-gets-specific-on-the-expo-floor/",
+   "date": "2026-10-22"
+  },
+  {
+   "id": "S7",
+   "section": "politics",
+   "title": "LIVE Federale begrotingsgesprekken slepen zich voort: alles lijkt nog muurvast te zitten",
+   "publisher": "VRT NWS",
+   "url": "https://www.vrt.be/vrtnws/nl/liveblog/federale-begrotingsgesprekken-slepen-zich-voort-alles-lijkt-nog~1790599460224/",
+   "date": "2026-10-22"
+  },
+  {
+   "id": "S8",
+   "section": "politics",
+   "title": "Maanden onderhandelen zonder resultaat: federale regering krijgt begrotingsoverleg (nog) niet rond",
+   "publisher": "VRT NWS",
+   "url": "https://www.vrt.be/vrtnws/nl/2026/10/22/maanden-onderhandelen-zonder-resultaat-federaal-begrotingsoverl/",
+   "date": "2026-10-22"
+  },
+  {
+   "id": "S9",
+   "section": "politics",
+   "title": "Black Sea attacks: Parliament demands action to protect EU's eastern flank",
+   "publisher": "Renew Europe",
+   "url": "https://www.reneweuropegroup.eu/news/2026-10-22/black-sea-attacks-parliament-demands-action-to-protect-eus-eastern-flank",
+   "date": "2026-10-22"
+  },
+  {
+   "id": "S10",
+   "section": "politics",
+   "title": "European Parliament criticises Bulgarian government's weak response to Russian threat in Black Sea",
+   "publisher": "The Sofia Globe",
+   "url": "https://sofiaglobe.com/2026/10/22/european-parliament-criticises-bulgarian-governments-weak-response-to-russian-threat-in-black-sea/",
+   "date": "2026-10-22"
+  },
+  {
+   "id": "S11",
+   "section": "politics",
+   "title": "Russian attacks show no change in Kremlin position (AFP)",
+   "publisher": "The Manila Times",
+   "url": "https://www.manilatimes.net/2026/10/23/world/americas-emea/russian-attacks-show-no-change-in-kremlin-position/2451873",
+   "date": "2026-10-23"
+  },
+  {
+   "id": "S12",
+   "section": "politics",
+   "title": "Zelenskyy says fresh Russian strikes show 'no change' in Kremlin position",
+   "publisher": "ABC News (Australia)",
+   "url": "https://www.abc.net.au/news/2026-10-23/zelensky-says-fresh-russian-strikes-show-no-change-in-kremlin-po/107299146",
+   "date": "2026-10-23"
+  },
+  {
+   "id": "S13",
+   "section": "energy",
+   "title": "EU Natural Gas - Price - Chart - Historical Data - News",
+   "publisher": "Trading Economics",
+   "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
+   "date": "2026-10-22"
+  },
+  {
+   "id": "S14",
+   "section": "energy",
+   "title": "Europe weighs energy-saving measures as Middle East crisis deepens",
+   "publisher": "Euronews",
+   "url": "https://www.euronews.com/2026/10/21/europe-weighs-energy-saving-measures-as-middle-east-crisis-deepens",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "S15",
+   "section": "energy",
+   "title": "European corporate earnings set to get a boost from energy windfall",
+   "publisher": "Reuters via Investing.com",
+   "url": "https://www.investing.com/news/stock-market-news/european-corporate-earnings-set-to-get-a-boost-from-energy-windfall-4966740",
+   "date": "2026-10-22"
+  },
+  {
+   "id": "S16",
+   "section": "energy",
+   "title": "ENGIE-app vertelt voortaan wanneer je best je wasmachine (bijna) gratis aanzet met zonne-energie",
+   "publisher": "TechPulse",
+   "url": "https://techpulse.be/nieuws/506666/engie-app-vertelt-voortaan-wanneer-je-best-je-wasmachine-bijna-gratis-aanzet-met-zonne-energie",
+   "date": "2026-10-22"
+  },
+  {
+   "id": "S17",
+   "section": "energy",
+   "title": "Elia verwacht meer batterijen en werkt aan netneutraal aansluitingskader hoogspanningsnet",
+   "publisher": "Solar & Storage Magazine",
+   "url": "https://solarmagazine.nl/nieuws-zonne-energie/i45103/elia-verwacht-meer-batterijen-en-werkt-aan-netneutraal-aansluitingskader-hoogspanningsnet",
+   "date": "2026-10-16"
+  },
+  {
+   "id": "S18",
+   "section": "energy",
+   "title": "Belgium and Engie buy another month for nuclear takeover talks",
+   "publisher": "New Mobility",
+   "url": "https://newmobility.news/en/2026/10/01/belgium-and-engie-buy-another-month-for-nuclear-takeover-talks/",
+   "date": "2026-10-01"
+  }
+ ]
+}
