@@ -204,6 +204,21 @@ def cmd_vercel_unstick(args, cfg) -> int:
     return 0
 
 
+def cmd_vercel_status(args, cfg) -> int:
+    from . import vercel  # noqa: PLC0415
+
+    _print({"deployments": vercel.recent_deployments(cfg.vercel_project, limit=args.limit)})
+    return 0
+
+
+def cmd_vercel_wait(args, cfg) -> int:
+    from . import vercel  # noqa: PLC0415
+
+    result = vercel.wait_ready(cfg.vercel_project, args.deployment, timeout_s=args.timeout)
+    _print(result)
+    return 0 if result["state"] == "READY" else 1
+
+
 def main(argv=None) -> int:
     p = argparse.ArgumentParser(prog="dailybrief")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -220,11 +235,16 @@ def main(argv=None) -> int:
     s.add_argument("--site", default="site")
     sub.add_parser("vercel-domain", help="print the Vercel project's production URL")
     sub.add_parser("vercel-unstick", help="cancel leftover queued/building Vercel deployments")
+    s = sub.add_parser("vercel-status", help="list the project's recent Vercel deployments")
+    s.add_argument("--limit", type=int, default=10)
+    s = sub.add_parser("vercel-wait", help="wait until a Vercel deployment is ready")
+    s.add_argument("deployment"); s.add_argument("--timeout", type=int, default=300)
     args = p.parse_args(argv)
     cfg = load()
     return {"today": cmd_today, "validate": cmd_validate, "publish": cmd_publish, "fallback": cmd_fallback,
             "probe": cmd_probe, "vercel-setup": cmd_vercel_setup,
-            "vercel-domain": cmd_vercel_domain, "vercel-unstick": cmd_vercel_unstick}[args.cmd](args, cfg)
+            "vercel-domain": cmd_vercel_domain, "vercel-unstick": cmd_vercel_unstick,
+            "vercel-status": cmd_vercel_status, "vercel-wait": cmd_vercel_wait}[args.cmd](args, cfg)
 
 
 if __name__ == "__main__":

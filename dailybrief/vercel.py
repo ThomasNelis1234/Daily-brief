@@ -41,6 +41,7 @@ def production_url(name: str) -> str | None:
     return f"https://{chosen}" if chosen else None
 
 
+
 STUCK_STATES = ("QUEUED", "INITIALIZING", "BUILDING")
 
 
@@ -49,23 +50,52 @@ def _team_params(project: dict) -> dict:
     return {"teamId": account} if account.startswith("team_") else {}
 
 
+def _summary(d: dict) -> dict:
+    return {"id": d.get("uid") or d.get("id"), "url": d.get("url"),
+            "state": d.get("readyState") or d.get("state"), "substate": d.get("readySubstate"),
+            "target": d.get("target"), "created": d.get("created") or d.get("createdAt"),
+            "error": d.get("errorCode") or d.get("errorMessage")}
+
+
+def recent_deployments(name: str, limit: int = 10) -> list[dict]:
+    project = ensure_project(name)
+    params = {"projectId": project["id"], "limit": limit, **_team_params(project)}
+    resp = requests.get(f"{API}/v6/deployments", headers=_headers(), params=params, timeout=30)
+    resp.raise_for_status()
+    return [_summary(d) for d in resp.json().get("deployments", [])]
+
+
 def cancel_stuck(name: str) -> list[dict]:
     """Cancel this project's deployments that are still queued or building.
 
     Publishing runs one at a time (workflow concurrency group), so any deployment still in one of these
-    states when a run starts is a leftover from an earlier run that hung or was cancelled. Left alone it
-    holds the account's build slot and every new deployment waits behind it at "Building…".
+    states when a run starts is a leftover from an earlier run that hung or was cancelled.
     """
     project = ensure_project(name)
-    params = {"projectId": project["id"], "state": ",".join(STUCK_STATES), "limit": 50, **_team_params(project)}
-    resp = requests.get(f"{API}/v6/deployments", headers=_headers(), params=params, timeout=30)
-    resp.raise_for_status()
     cancelled = []
-    for d in resp.json().get("deployments", []):
-        state = d.get("state") or d.get("readyState")
-        if state not in STUCK_STATES:
+    for d in recent_deployments(name, limit=20):
+        if d["state"] not in STUCK_STATES:
             continue
-        r = requests.patch(f"{API}/v12/deployments/{d['uid']}/cancel", headers=_headers(),
+        r = requests.patch(f"{API}/v12/deployments/{d['id']}/cancel", headers=_headers(),
                            params=_team_params(project), timeout=30)
-        cancelled.append({"id": d["uid"], "url": d.get("url"), "state": state, "cancel_status": r.status_code})
+        cancelled.append({**d, "cancel_status": r.status_code})
     return cancelled
+
+
+def wait_ready(name: str, deployment: str, timeout_s: int = 300, poll_s: int = 10) -> dict:
+    """Poll one deployment (id or URL) until it is READY, ERROR or CANCELED, or the timeout passes."""
+    import time  # noqa: PLC0415
+
+    project = ensure_project(name)
+    ident = deployment.replace("https://", "").strip("/")
+    deadline = time.monotonic() + timeout_s
+    last = {}
+    while True:
+        resp = requests.get(f"{API}/v13/deployments/{ident}", headers=_headers(),
+                            params=_team_params(project), timeout=30)
+        resp.raise_for_status()
+        last = _summary(resp.json())
+        print(f"deployment {last['url']}: {last['state']} {last['substate'] or ''}".rstrip(), flush=True)
+        if last["state"] in ("READY", "ERROR", "CANCELED") or time.monotonic() > deadline:
+            return last
+        time.sleep(poll_s)
