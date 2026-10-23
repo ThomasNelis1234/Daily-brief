@@ -196,6 +196,14 @@ def cmd_vercel_domain(args, cfg) -> int:
     return 0
 
 
+def cmd_vercel_unstick(args, cfg) -> int:
+    from . import vercel  # noqa: PLC0415
+
+    cancelled = vercel.cancel_stuck(cfg.vercel_project)
+    _print({"cancelled": cancelled})
+    return 0
+
+
 def main(argv=None) -> int:
     p = argparse.ArgumentParser(prog="dailybrief")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -211,11 +219,12 @@ def main(argv=None) -> int:
     s = sub.add_parser("vercel-setup", help="create the Vercel project if needed and link the site folder")
     s.add_argument("--site", default="site")
     sub.add_parser("vercel-domain", help="print the Vercel project's production URL")
+    sub.add_parser("vercel-unstick", help="cancel leftover queued/building Vercel deployments")
     args = p.parse_args(argv)
     cfg = load()
     return {"today": cmd_today, "validate": cmd_validate, "publish": cmd_publish, "fallback": cmd_fallback,
             "probe": cmd_probe, "vercel-setup": cmd_vercel_setup,
-            "vercel-domain": cmd_vercel_domain}[args.cmd](args, cfg)
+            "vercel-domain": cmd_vercel_domain, "vercel-unstick": cmd_vercel_unstick}[args.cmd](args, cfg)
 
 
 if __name__ == "__main__":

@@ -80,12 +80,15 @@ jobs:
         if: steps.vercel.outputs.enabled == 'true'
         timeout-minutes: 15
         env:
-          # Pinned: vercel@latest moved to 65.2.0 on 2026-10-23 and its deploys hung at "Building…".
+          # Pinned so a new CLI release can't change deploy behaviour overnight.
           VERCEL_CLI: vercel@65.1.0
         run: |
           # Build locally and upload the finished output (--prebuilt), so the deploy never waits in
           # Vercel's remote build queue. Each attempt is capped at 5 minutes and retried once.
           deploy() {
+            # Leftover queued/building deployments (from a run that hung or was cancelled) block the
+            # build slot, so every new deploy waits forever at "Building…". Clear them first.
+            python -m dailybrief.cli vercel-unstick || echo "vercel-unstick failed, deploying anyway"
             ( cd site \
               && timeout 120 npx --yes "$VERCEL_CLI" pull --yes --environment=production --token "$VERCEL_TOKEN" \
               && timeout 120 npx --yes "$VERCEL_CLI" build --prod --yes --token "$VERCEL_TOKEN" \

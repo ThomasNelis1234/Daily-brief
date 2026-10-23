@@ -39,3 +39,33 @@ def production_url(name: str) -> str | None:
     generated = sorted((n for n in names if n.endswith(".vercel.app")), key=len)
     chosen = (custom or generated or [None])[0]
     return f"https://{chosen}" if chosen else None
+
+
+STUCK_STATES = ("QUEUED", "INITIALIZING", "BUILDING")
+
+
+def _team_params(project: dict) -> dict:
+    account = project.get("accountId", "")
+    return {"teamId": account} if account.startswith("team_") else {}
+
+
+def cancel_stuck(name: str) -> list[dict]:
+    """Cancel this project's deployments that are still queued or building.
+
+    Publishing runs one at a time (workflow concurrency group), so any deployment still in one of these
+    states when a run starts is a leftover from an earlier run that hung or was cancelled. Left alone it
+    holds the account's build slot and every new deployment waits behind it at "Building…".
+    """
+    project = ensure_project(name)
+    params = {"projectId": project["id"], "state": ",".join(STUCK_STATES), "limit": 50, **_team_params(project)}
+    resp = requests.get(f"{API}/v6/deployments", headers=_headers(), params=params, timeout=30)
+    resp.raise_for_status()
+    cancelled = []
+    for d in resp.json().get("deployments", []):
+        state = d.get("state") or d.get("readyState")
+        if state not in STUCK_STATES:
+            continue
+        r = requests.patch(f"{API}/v12/deployments/{d['uid']}/cancel", headers=_headers(),
+                           params=_team_params(project), timeout=30)
+        cancelled.append({"id": d["uid"], "url": d.get("url"), "state": state, "cancel_status": r.status_code})
+    return cancelled
