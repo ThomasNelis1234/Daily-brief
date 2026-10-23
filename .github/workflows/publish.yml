@@ -78,9 +78,20 @@ jobs:
 
       - name: Deploy to Vercel
         if: steps.vercel.outputs.enabled == 'true'
+        timeout-minutes: 15
+        env:
+          # Pinned: vercel@latest moved to 65.2.0 on 2026-10-23 and its deploys hung at "Building…".
+          VERCEL_CLI: vercel@65.1.0
         run: |
-          cd site && npx --yes vercel@latest deploy --prod --yes --token "$VERCEL_TOKEN"
-          cd ..
+          # Build locally and upload the finished output (--prebuilt), so the deploy never waits in
+          # Vercel's remote build queue. Each attempt is capped at 5 minutes and retried once.
+          deploy() {
+            ( cd site \
+              && timeout 120 npx --yes "$VERCEL_CLI" pull --yes --environment=production --token "$VERCEL_TOKEN" \
+              && timeout 120 npx --yes "$VERCEL_CLI" build --prod --yes --token "$VERCEL_TOKEN" \
+              && timeout 300 npx --yes "$VERCEL_CLI" deploy --prebuilt --prod --yes --token "$VERCEL_TOKEN" )
+          }
+          deploy || { echo "Deploy attempt 1 failed or timed out, retrying once"; sleep 20; deploy; }
           # First deploy of a new project: the production domain only exists now. If the feed was built
           # with a different URL, rebuild (audio is cached) and deploy once more.
           ACTUAL=$(python -m dailybrief.cli vercel-domain || true)
@@ -89,7 +100,7 @@ jobs:
           if [ -n "$ACTUAL" ] && [ "$ACTUAL" != "$BUILT" ] && [ -z "${{ vars.SITE_URL }}" ]; then
             echo "Feed was built for $BUILT, rebuilding for $ACTUAL"
             SITE_URL="$ACTUAL" python -m dailybrief.cli publish --out site
-            cd site && npx --yes vercel@latest deploy --prod --yes --token "$VERCEL_TOKEN"
+            deploy
           fi
           echo "### Podcast feed: ${ACTUAL:-$BUILT}/feed.xml" >> "$GITHUB_STEP_SUMMARY"
 
