@@ -96,6 +96,6 @@ def wait_ready(name: str, deployment: str, timeout_s: int = 300, poll_s: int = 1
         resp.raise_for_status()
         last = _summary(resp.json())
         print(f"deployment {last['url']}: {last['state']} {last['substate'] or ''}".rstrip(), flush=True)
-        if last["state"] in ("READY", "ERROR", "CANCELED") or time.monotonic() > deadline:
+        if last["state"] in ("READY", "ERROR", "CANCELED", "BLOCKED") or time.monotonic() > deadline:
             return last
         time.sleep(poll_s)
