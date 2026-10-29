@@ -1,0 +1,157 @@
+{
+ "date": "2026-10-29",
+ "sources": [
+  {
+   "id": "S1",
+   "section": "ai",
+   "title": "OpenAI plans to buy Google's AI chips, The Information reports",
+   "publisher": "Reuters via The Star",
+   "url": "https://www.thestar.com.my/tech/tech-news/2026/10/28/openai-plans-to-buy-google039s-ai-chips-the-information-reports",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "S2",
+   "section": "ai",
+   "title": "OpenAI Plans to Buy Google's AI Chips as It Looks Beyond Nvidia: Report",
+   "publisher": "Decrypt",
+   "url": "https://decrypt.co/382090/openai-plans-buy-google-ai-chips-looks-beyond-nvidia",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "S3",
+   "section": "ai",
+   "title": "Alphabet reports Q3 2026 revenue of $127.6 billion",
+   "publisher": "9to5Google",
+   "url": "https://9to5google.com/2026/10/28/alphabet-q3-2026-earnings/",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "S4",
+   "section": "ai",
+   "title": "Earnings call transcript: Alphabet Q3 2026 profit miss sparks 10% after-hours drop",
+   "publisher": "Investing.com",
+   "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-alphabet-q3-2026-profit-miss-sparks-10-afterhours-drop-93CH-4981037",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "S5",
+   "section": "ai",
+   "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model, and our remediation with SGLang",
+   "publisher": "Cloudflare",
+   "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+   "date": "2026-10-26"
+  },
+  {
+   "id": "S6",
+   "section": "ai",
+   "title": "GPT-6.1 Terra: Benchmarks, Pricing and Access",
+   "publisher": "DataCamp",
+   "url": "https://www.datacamp.com/blog/gpt-6-1-terra",
+   "date": "2026-10-27"
+  },
+  {
+   "id": "S7",
+   "section": "politics",
+   "title": "LIVE Kernkabinet uiteen zonder begrotingsakkoord",
+   "publisher": "VRT NWS",
+   "url": "https://www.vrt.be/vrtnws/nl/liveblog/kernkabinet-uiteen-zonder-begrotingsakkoord-vooruit-zal-huid-d~1790599460224/",
+   "date": "2026-10-27"
+  },
+  {
+   "id": "S8",
+   "section": "politics",
+   "title": "De Wever roept coalitiepartners opnieuw samen voor begrotingsoverleg, maar grote meningsverschillen blijven",
+   "publisher": "Business AM",
+   "url": "https://businessam.be/de-wever-roept-coalitiepartners-opnieuw-samen-voor-begrotingsoverleg-maar-grote-meningsverschillen-blijven",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "S9",
+   "section": "politics",
+   "title": "Belgian Finance Ministry hit by cyberattack, MyMinfin and other services offline",
+   "publisher": "The Brussels Times",
+   "url": "https://www.brusselstimes.com/2381839/belgian-finance-ministry-hit-by-cyberattack-myminfin-and-other-services-offline",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "S10",
+   "section": "politics",
+   "title": "EU begins talks on tougher safeguards for newcomers, with Montenegro first in line",
+   "publisher": "Euronews",
+   "url": "https://www.euronews.com/2026/10/28/eu-begins-talks-on-tougher-safeguards-for-newcomers-with-montenegro-first-in-line",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "S11",
+   "section": "politics",
+   "title": "Israel election results: Netanyahu bloc at 53 seats, Eisenkot bloc at 48 as nearly all votes counted",
+   "publisher": "Ynet News",
+   "url": "https://www.ynetnews.com/article/hjnatbkaml",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "S12",
+   "section": "politics",
+   "title": "Israel election results: Benjamin Netanyahu bloc wins 53 seats, opposition holds 48",
+   "publisher": "The Jerusalem Post",
+   "url": "https://www.jpost.com/israel-election-2026/article-913122",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "S13",
+   "section": "politics",
+   "title": "Russia's War On Ukraine: News And Information From Ukraine",
+   "publisher": "Forbes",
+   "url": "https://www.forbes.com/sites/katyasoldak/2026/10/28/tuesday-october-28-russias-war-on-ukraine-news-and-information-from-ukraine/",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "S14",
+   "section": "energy",
+   "title": "Belgian government considering nationalisation of nuclear power stations",
+   "publisher": "VRT NWS",
+   "url": "https://www.vrt.be/vrtnws/en/2026/10/27/belgian-government-considering-nationalisation-of-nuclear-power/",
+   "date": "2026-10-27"
+  },
+  {
+   "id": "S15",
+   "section": "energy",
+   "title": "Nationalisation des centrales nucléaires : L'État aurait dû le faire depuis longtemps",
+   "publisher": "L'Avenir",
+   "url": "https://www.lavenir.net/actu/belgique/politique/2026/10/28/nationalisation-des-centrales-nucleaires-letat-aurait-du-le-faire-depuis-longtemps-6I4HZNFKJVAWTONGCNO3PGOMYY/",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "S16",
+   "section": "energy",
+   "title": "European gas price crosses €100 for first time since 2022 as EU warns of new crisis",
+   "publisher": "Euronews",
+   "url": "https://www.euronews.com/2026/10/28/european-gas-price-crosses-100-for-first-time-since-2022-as-eu-warns-of-new-crisis",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "S17",
+   "section": "energy",
+   "title": "European gas hits €100/MWh for first time since 2022",
+   "publisher": "RTÉ",
+   "url": "https://www.rte.ie/news/business/2026/1028/1597116-european-gas-price/",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "S18",
+   "section": "energy",
+   "title": "Nord Stream pipeline won't reopen after the war, Brussels tells the US and Russia",
+   "publisher": "Euronews",
+   "url": "https://www.euronews.com/2026/10/28/nord-stream-pipeline-wont-reopen-after-the-war-brussels-tells-the-us-and-russia",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "S19",
+   "section": "energy",
+   "title": "The EU debates energy prices and supply ahead of winter",
+   "publisher": "Demócrata",
+   "url": "https://www.democrata.es/en/economy/the-eu-energy-ministers-will-debate-on-thursday-in-luxembourg-prices-and-supply-security-for-the-winter/",
+   "date": "2026-10-28"
+  }
+ ]
+}
