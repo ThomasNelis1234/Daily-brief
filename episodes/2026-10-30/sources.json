@@ -1,0 +1,141 @@
+{
+ "date": "2026-10-30",
+ "sources": [
+  {
+   "id": "S1",
+   "section": "ai",
+   "title": "Google unveils Gemini 4 Carbon, retaking the world's no. 1 spot on updated, harder benchmarks — but access is limited",
+   "publisher": "VentureBeat",
+   "url": "https://venturebeat.com/technology/google-unveils-gemini-4-carbon-retaking-the-worlds-no-1-spot-on-updated-harder-benchmarks-but-access-is-limited",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "S2",
+   "section": "ai",
+   "title": "Google's Gemini 4 Carbon promises 'significant leap' in AI coding and cybersecurity",
+   "publisher": "Engadget",
+   "url": "https://www.engadget.com/2300677/google-gemini-carbon-promises-significant-leap-in-ai-coding-and-cybersecurity/",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "S3",
+   "section": "ai",
+   "title": "GitHub debuts Copilot Fusion, a new model selection & orchestration system",
+   "publisher": "The New Stack",
+   "url": "https://thenewstack.io/github-copilot-fusion/",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "S4",
+   "section": "ai",
+   "title": "GitHub launches Copilot Fusion as agents start 40% of pull requests",
+   "publisher": "The Next Web",
+   "url": "https://thenextweb.com/news/github-universe-copilot-fusion-octoverse-agents",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "S5",
+   "section": "ai",
+   "title": "Everything That Happened in AI Today Thursday, October 29",
+   "publisher": "The Neuron",
+   "url": "https://theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-october-29-2026",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "S6",
+   "section": "politics",
+   "title": "Budget fédéral : l'Arizona proche d'un accord… ou de la crise",
+   "publisher": "La Libre",
+   "url": "https://lalibre.be/belgique/politique-belge/2026/10/29/budget-federal-larizona-proche-dun-accord-ou-de-la-crise-HEDOYTQB2NB7LIPFZZJDER4HO4",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "S7",
+   "section": "politics",
+   "title": "Budget fédéral: le temps presse pour le gouvernement qui veut accélérer la cadence",
+   "publisher": "La DH (Belga)",
+   "url": "https://www.dhnet.be/actu/belgique/2026/10/29/budget-federal-le-temps-presse-pour-le-gouvernement-qui-veut-accelerer-la-cadence-E7M63LYHTFDDZLPGA5U3E2XAQE/",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "S8",
+   "section": "politics",
+   "title": "LIVE Kernkabinet uiteen zonder begrotingsakkoord",
+   "publisher": "VRT NWS",
+   "url": "https://www.vrt.be/vrtnws/nl/liveblog/kernkabinet-uiteen-zonder-begrotingsakkoord-vooruit-zal-huid-d~1790599460224/",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "S9",
+   "section": "politics",
+   "title": "Kremlin Says Ukraine Peace Talks Hinge on Battlefield, Rejects European Role",
+   "publisher": "Kyiv Post",
+   "url": "https://www.kyivpost.com/post/88515",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "S10",
+   "section": "politics",
+   "title": "Israel election result shows no overall majority as vote count complete",
+   "publisher": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/10/29/israel-election-result-shows-no-overall-majority-as-vote-count-complete",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "S11",
+   "section": "politics",
+   "title": "US midterms: Five days to go",
+   "publisher": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/10/29/us-midterms-five-days-to-go-what-the-polls-say-as-trump-harris-campaign",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "S12",
+   "section": "energy",
+   "title": "België sluit zich aan bij Nucleaire Alliantie",
+   "publisher": "Business AM",
+   "url": "https://businessam.be/belgie-sluit-zich-aan-bij-nucleaire-alliantie",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "S13",
+   "section": "energy",
+   "title": "Nationaliser les centrales nucléaires belges ? \"Ce serait une catastrophe financière pour la Belgique\"",
+   "publisher": "L'Avenir",
+   "url": "https://lavenir.net/actu/belgique/2026/10/29/nationaliser-les-centrales-nucleaires-belges-ce-serait-une-catastrophe-financiere-pour-la-belgique-estime-lingenieur-nucleaire-dominique-woitrin-RY47VQYWMZGMXL36Z54ZM66FN4",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "S14",
+   "section": "energy",
+   "title": "Energy, Jørgensen: \"Next winter will be tough\"",
+   "publisher": "Eunews",
+   "url": "https://www.eunews.it/en/2026/10/29/jorgensen-next-winter-will-be-difficult-over-50-million-europeans-are-unable-to-heat-their-homes/",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "S15",
+   "section": "energy",
+   "title": "EU countries push back against Brussels plan to tax gas more than electricity",
+   "publisher": "Euronews",
+   "url": "https://www.euronews.com/2026/10/29/eu-countries-push-back-against-brussels-plan-to-tax-gas-more-than-electricity",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "S16",
+   "section": "energy",
+   "title": "Results of the TTE Energy Council, 29 October 2026",
+   "publisher": "Irish Presidency of the Council of the EU",
+   "url": "https://irish-presidency.consilium.europa.eu/en/news/results-of-the-tte-energy-council-29-october-2026/",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "S17",
+   "section": "energy",
+   "title": "EU Natural Gas - Price - Chart - Historical Data - News",
+   "publisher": "Trading Economics",
+   "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
+   "date": "2026-10-30"
+  }
+ ]
+}
