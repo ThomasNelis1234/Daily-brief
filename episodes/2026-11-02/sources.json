@@ -1,0 +1,133 @@
+{
+ "date": "2026-11-02",
+ "sources": [
+  {
+   "id": "S1",
+   "section": "ai",
+   "title": "Mistral Releases Open Weights for 1-Trillion-Parameter Mistral Large 4",
+   "publisher": "Let's Data Science",
+   "url": "https://letsdatascience.com/news/mistral-releases-open-weights-for-1-trillion-parameter-mistr-d712eb0e",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "S2",
+   "section": "ai",
+   "title": "AI Daily Digest October 30, 2026: Mistral Opens a Trillion Parameters, Cloud Giants Report, OpenAI Rewrites the Spec",
+   "publisher": "DEV Community",
+   "url": "https://dev.to/hiroki-ii-ai/ai-daily-digest-october-30-2026-mistral-opens-a-trillion-parameters-cloud-giants-report-openai-1gk7",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "S3",
+   "section": "ai",
+   "title": "As Anthropic finally files for IPO, rising risks aren't slowing the AI buildout - yet",
+   "publisher": "SiliconANGLE",
+   "url": "https://siliconangle.com/2026/10/30/as-anthropic-finally-files-for-ipo-rising-risks-arent-slowing-the-ai-buildout-yet",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "S4",
+   "section": "politics",
+   "title": "LIVE Bilaterale gesprekken afgelopen, \"waarschijnlijk\" voltallige kern straks weer bijeen",
+   "publisher": "VRT NWS",
+   "url": "https://www.vrt.be/vrtnws/nl/liveblog/pieterjan-de-smedt-in-de-wetstraat-we-gaan-richting-moment-van~1793247532380/",
+   "date": "2026-11-01"
+  },
+  {
+   "id": "S5",
+   "section": "politics",
+   "title": "Budget fédéral - Le kern n'est pas parvenu à dégager un accord, Bart De Wever se rendra lundi chez le Roi",
+   "publisher": "La Libre (Belga)",
+   "url": "https://www.lalibre.be/dernieres-depeches/2026/11/02/budget-federal-le-kern-nest-pas-parvenu-a-degager-un-accord-bart-de-wever-se-rendra-lundi-chez-le-roi-WVATHXV3VBDT5GDO5BG3DXRFNQ/",
+   "date": "2026-11-02"
+  },
+  {
+   "id": "S6",
+   "section": "politics",
+   "title": "Budget fédéral : l'Arizona au bord du précipice, un comité restreint (kern) a débuté à 21 heures",
+   "publisher": "RTBF",
+   "url": "https://rtbf.be/article/budget-federal-l-arizona-au-bord-du-precipice-un-comite-restreint-kern-va-debuter-a-21-heures-11808972",
+   "date": "2026-11-01"
+  },
+  {
+   "id": "S7",
+   "section": "politics",
+   "title": "Raakt begroting nog op tijd rond of gaan we naar voorlopige twaalfden? \"Money time voor premier De Wever\"",
+   "publisher": "VRT NWS",
+   "url": "https://www.vrt.be/vrtnws/nl/2026/11/01/politicoloog-bouteca-over-begroting/",
+   "date": "2026-11-01"
+  },
+  {
+   "id": "S8",
+   "section": "politics",
+   "title": "Belgium settles for a one-year budget as full agreement stays out of reach",
+   "publisher": "Brussels Signal",
+   "url": "https://brusselssignal.eu/2026/10/belgium-settles-for-a-one-year-budget-as-full-agreement-stays-out-of-reach/",
+   "date": "2026-10-15"
+  },
+  {
+   "id": "S9",
+   "section": "politics",
+   "title": "Europe Intelligence Brief for Saturday, October 31, 2026",
+   "publisher": "The Rio Times",
+   "url": "https://www.riotimesonline.com/europe-intelligence-brief-saturday-october-31-2026",
+   "date": "2026-10-31"
+  },
+  {
+   "id": "S10",
+   "section": "politics",
+   "title": "Everything to know about House and Senate control, ballot measures and 2026 Election Day poll closing",
+   "publisher": "Fox News",
+   "url": "https://www.foxnews.com/politics/everything-know-house-senate-control-ballot-measures-2026-election-day-poll-closing",
+   "date": "2026-11-01"
+  },
+  {
+   "id": "S11",
+   "section": "politics",
+   "title": "US approves potential $2.1 billion sale of scarce Patriot missiles to Ukraine",
+   "publisher": "CNN (via KEYT)",
+   "url": "https://keyt.com/politics/cnn-us-politics/2026/10/30/us-approves-potential-2-1-billion-sale-of-scarce-patriot-missiles-to-ukraine/",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "S12",
+   "section": "energy",
+   "title": "Government and Engie need more time for agreement on take-over of nuclear plants",
+   "publisher": "Belga",
+   "url": "https://belgashare.be/newsrooms/70/press-releases/37075/government-and-engie-need-more-time-for-agreement-on-take-over-of-nuclear-plants/",
+   "date": "2026-10-01"
+  },
+  {
+   "id": "S13",
+   "section": "energy",
+   "title": "Belgian government considering nationalisation of nuclear power stations",
+   "publisher": "VRT NWS",
+   "url": "https://vrt.be/vrtnws/en/2026/10/27/belgian-government-considering-nationalisation-of-nuclear-power",
+   "date": "2026-10-27"
+  },
+  {
+   "id": "S14",
+   "section": "energy",
+   "title": "11 EU States Tap Emergency Diesel Stocks",
+   "publisher": "The Rio Times",
+   "url": "https://www.riotimesonline.com/eu-diesel-emergency-stocks-release-2026/",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "S15",
+   "section": "energy",
+   "title": "European Gas Tops 101 Euros for First Time Since 2022",
+   "publisher": "OilPrice.com",
+   "url": "https://oilprice.com/Latest-Energy-News/World-News/European-Gas-Tops-101-Euros-for-First-Time-Since-2022.html",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "S16",
+   "section": "term",
+   "title": "Mistral Releases Open Weights for 1-Trillion-Parameter Mistral Large 4",
+   "publisher": "Let's Data Science",
+   "url": "https://letsdatascience.com/news/mistral-releases-open-weights-for-1-trillion-parameter-mistr-d712eb0e",
+   "date": "2026-10-29"
+  }
+ ]
+}
