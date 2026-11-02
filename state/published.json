@@ -1,4 +1,18 @@
 {
+  "2026-11-02": {
+    "published_at": "2026-11-02T05:27:55+01:00",
+    "writer": "claude",
+    "script_sha": "34d4d6e6393801576cc88740096c26aad19d514c1e4f5f7f4fd8ea3d77b84aaa",
+    "duration_s": 858,
+    "bytes": 5148000
+  },
+  "2026-10-30": {
+    "published_at": "2026-11-02T05:27:55+01:00",
+    "writer": "claude",
+    "script_sha": "c38a0e72115f5deea7c3a58adf32aa1af664426f71e222c4281373189658f64b",
+    "duration_s": 851,
+    "bytes": 5108832
+  },
   "2026-10-29": {
     "published_at": "2026-10-29T05:19:08+01:00",
     "writer": "claude",
