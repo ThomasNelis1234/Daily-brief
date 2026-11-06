@@ -1,0 +1,141 @@
+{
+ "date": "2026-11-06",
+ "sources": [
+  {
+   "id": "S1",
+   "section": "ai",
+   "title": "OpenAI's GPT-6 Cyber found 81 new Firefox flaws and is rated 'Critical'",
+   "publisher": "The Next Web",
+   "url": "https://thenextweb.com/news/openai-gpt-6-cyber-launch-firefox-linux-daybreak-red",
+   "date": "2026-11-05"
+  },
+  {
+   "id": "S2",
+   "section": "ai",
+   "title": "OpenAI Launches GPT-6 Cyber That Finds 81 Firefox Flaws and Develops 948 Linux Exploits",
+   "publisher": "Cyber Security News",
+   "url": "https://cybersecuritynews.com/openai-launches-gpt-6-cyber/",
+   "date": "2026-11-06"
+  },
+  {
+   "id": "S3",
+   "section": "ai",
+   "title": "OpenAI to acquire Pierre to expand Codex developer infrastructure",
+   "publisher": "Investing.com via Yahoo Finance",
+   "url": "https://sg.finance.yahoo.com/news/openai-acquire-pierre-expand-codex-170249678.html",
+   "date": "2026-11-04"
+  },
+  {
+   "id": "S4",
+   "section": "ai",
+   "title": "Uber Eats sees little traffic from AI agents",
+   "publisher": "Nation's Restaurant News via Yahoo Finance",
+   "url": "https://finance.yahoo.com/technology/ai/articles/uber-eats-sees-little-traffic-190940444.html",
+   "date": "2026-11-04"
+  },
+  {
+   "id": "S5",
+   "section": "ai",
+   "title": "AI Daily Digest November 6, 2026: OpenAI Ships GPT-6 Cyber, Meta Buys Conductor, Anthropic Locks Down Claude Enterprise",
+   "publisher": "DEV Community",
+   "url": "https://dev.to/hiroki-ii-ai/ai-daily-digest-november-6-2026-openai-ships-gpt-6-cyber-meta-buys-conductor-anthropic-locks-1jij",
+   "date": "2026-11-06"
+  },
+  {
+   "id": "S6",
+   "section": "ai",
+   "title": "Everything That Happened in AI Today Thursday, November 5",
+   "publisher": "The Neuron",
+   "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-5-2026/",
+   "date": "2026-11-05"
+  },
+  {
+   "id": "S7",
+   "section": "politics",
+   "title": "De Wever noemt noodbegroting \"afschuwelijk falen\" en roept op tot \"verantwoordelijkheid\"",
+   "publisher": "VRT NWS",
+   "url": "https://www.vrt.be/vrtnws/nl/liveblog/de-wever-noemt-noodbegroting-afschuwelijk-falen-en-roept-op-to~1793247532380/",
+   "date": "2026-11-05"
+  },
+  {
+   "id": "S8",
+   "section": "politics",
+   "title": "\"Un échec cuisant\" : entre douzièmes provisoires et alerte de Bart De Wever, ce qu'il faut retenir de ce jour de consultations royales",
+   "publisher": "L'Avenir",
+   "url": "https://www.lavenir.net/actu/belgique/politique/2026/11/05/un-echec-cuisant-entre-douziemes-provisoires-et-alerte-de-bart-de-wever-ce-quil-faut-retenir-de-ce-jour-de-consultations-royales-2ZPCTXVKFZHPVMHBVLZZS7O67E/",
+   "date": "2026-11-05"
+  },
+  {
+   "id": "S9",
+   "section": "politics",
+   "title": "Costa: Europe must take a stand in the race for AI",
+   "publisher": "Eunews",
+   "url": "https://www.eunews.it/en/2026/11/05/costa-calls-on-the-27-member-states-in-dublin-the-eu-must-define-its-position-in-the-global-race-for-ai/",
+   "date": "2026-11-05"
+  },
+  {
+   "id": "S10",
+   "section": "politics",
+   "title": "Trump Weighs Iran Strikes or Deal After Midterm Loss as Oil Prices Drop to $93",
+   "publisher": "Gulf News",
+   "url": "https://gulfnews.com/world/mena/trump-weighs-iran-strikes-or-deal-after-midterm-loss-as-vance-urges-agreement-qatar-mediates-brent-oil-falls-to-93-1.500736556",
+   "date": "2026-11-05"
+  },
+  {
+   "id": "S11",
+   "section": "politics",
+   "title": "Iran War Updates: More ships attacked in Persian Gulf, oil prices rebound slightly after post-midterm plunge",
+   "publisher": "CBS News",
+   "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-midterms-strait-of-hormuz/",
+   "date": "2026-11-05"
+  },
+  {
+   "id": "S12",
+   "section": "politics",
+   "title": "Midterms 2026 election results and latest updates: Mississippi votes still being counted in Senate nail-biter",
+   "publisher": "Yahoo News",
+   "url": "https://www.yahoo.com/news/politics/live/midterms-2026-election-results-and-latest-updates-mississippi-votes-still-being-counted-in-senate-nail-biter-after-democrats-take-control-of-congress-200037541.html",
+   "date": "2026-11-05"
+  },
+  {
+   "id": "S13",
+   "section": "energy",
+   "title": "Engie : pas de panne de courant, des objectifs annuels revus vers le haut",
+   "publisher": "Zonebourse",
+   "url": "https://zonebourse.com/actualite-bourse/engie-pas-de-panne-de-courant-des-objectifs-annuels-revus-vers-le-haut-ce785fdcdd8ef625",
+   "date": "2026-11-05"
+  },
+  {
+   "id": "S14",
+   "section": "energy",
+   "title": "\"Un échec cuisant\" : entre douzièmes provisoires et alerte de Bart De Wever",
+   "publisher": "L'Avenir",
+   "url": "https://www.lavenir.net/actu/belgique/politique/2026/11/05/un-echec-cuisant-entre-douziemes-provisoires-et-alerte-de-bart-de-wever-ce-quil-faut-retenir-de-ce-jour-de-consultations-royales-2ZPCTXVKFZHPVMHBVLZZS7O67E/",
+   "date": "2026-11-05"
+  },
+  {
+   "id": "S15",
+   "section": "energy",
+   "title": "European Gas Prices Slide 16% From 4-Year High on Iran Hopes",
+   "publisher": "Trading and Investment News",
+   "url": "https://www.tradingandinvestmentnews.co.uk/european-gas-prices-slide-more-than-15-from-a-4-year-high-on-iran-deal-hopes/",
+   "date": "2026-11-05"
+  },
+  {
+   "id": "S16",
+   "section": "energy",
+   "title": "Green Voltis Raises €13.5M for AI Battery Trading",
+   "publisher": "Pomegra",
+   "url": "https://pomegra.io/startups/green-voltis-raises-13-5m-for-ai-battery-trading-2026-11-05",
+   "date": "2026-11-05"
+  },
+  {
+   "id": "S17",
+   "section": "term",
+   "title": "OpenAI Launches GPT-6 Cyber That Finds 81 Firefox Flaws and Develops 948 Linux Exploits",
+   "publisher": "Cyber Security News",
+   "url": "https://cybersecuritynews.com/openai-launches-gpt-6-cyber/",
+   "date": "2026-11-06"
+  }
+ ]
+}
