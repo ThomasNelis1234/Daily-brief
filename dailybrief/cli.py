@@ -66,8 +66,8 @@ def _fake_synth(text: str, out: Path) -> None:
 def cmd_publish(args, cfg) -> int:
     out = Path(args.out)
     cache = Path(args.cache)
-    synth = _fake_synth if args.fake_audio else audio.edge_synthesizer(cfg.audio["voice"], cfg.audio["rate"])
-    voice_tag = cfg.audio["voice"].replace("-", "").lower()[-8:]
+    synth = _fake_synth if args.fake_audio else audio.synthesizer(cfg.audio)
+    voice_tag = (cfg.audio.get("engine", "edge")[:2] + cfg.audio["voice"].replace("-", "").replace("_", "").lower()[-8:])
     keep = cfg.publish["keep_episodes"]
     items, skipped, made = [], [], []
     for folder in epmod.list_folders(cfg.episodes_dir):
@@ -79,7 +79,11 @@ def cmd_publish(args, cfg) -> int:
             skipped.append({"date": ep.id, "errors": result["errors"]})
             continue
         key = f"{ep.id}-{ep.script_sha[:12]}-{voice_tag}"
-        path, new = audio.ensure_audio(ep.spoken_text(), cache, key, synth)
+        older = sorted(cache.glob(f"{ep.id}-{ep.script_sha[:12]}-*.mp3")) if cache.exists() else []
+        if not (cache / f"{key}.mp3").exists() and older and ep.id in state.load(cfg.state_file):
+            path, new = older[0], False  # already live in a previous voice: keep it, don't re-record
+        else:
+            path, new = audio.ensure_audio(ep.spoken_text(), cache, key, synth)
         if new:
             made.append(ep.id)
         size = path.stat().st_size
@@ -105,6 +109,42 @@ def cmd_publish(args, cfg) -> int:
               "skipped": skipped, **summary}
     _print(report)
     return 0 if items else 1
+
+
+VOICE_CANDIDATES = [
+    ("edge", "en-GB-RyanNeural", "Current voice (Microsoft, British male)"),
+    ("edge", "en-US-AndrewMultilingualNeural", "Microsoft, American male, newer model"),
+    ("edge", "en-US-AvaMultilingualNeural", "Microsoft, American female, newer model"),
+    ("kokoro", "bm_george", "Kokoro, British male"),
+    ("kokoro", "bm_lewis", "Kokoro, British male"),
+    ("kokoro", "bf_emma", "Kokoro, British female"),
+    ("kokoro", "am_michael", "Kokoro, American male"),
+    ("kokoro", "af_heart", "Kokoro, American female (often rated most natural)"),
+]
+
+
+def cmd_voices(args, cfg) -> int:
+    """Record the same ~45-second excerpt in each candidate voice into voices/ for comparison."""
+    folder = epmod.list_folders(cfg.episodes_dir)[0]
+    ep = epmod.load(folder)
+    intro = ep.body("Intro") or ""
+    ai_paras = [p for p in (ep.body("AI") or "").split("\n\n") if p.strip()][:2]
+    text = audio.clean_for_speech("\n\n".join([intro, *ai_paras]))
+    out = cfg.root / "voices"
+    out.mkdir(exist_ok=True)
+    made = []
+    for engine, voice, label in VOICE_CANDIDATES:
+        path = out / f"{engine}-{voice}.mp3"
+        try:
+            audio.synthesizer(cfg.audio, voice=voice, engine=engine)(text, path)
+            made.append({"engine": engine, "voice": voice, "label": label, "file": path.name,
+                         "current": engine == cfg.audio.get("engine", "edge") and voice == cfg.audio["voice"]})
+        except Exception as exc:
+            print(f"{engine}/{voice} failed: {exc}", file=sys.stderr)
+    (out / "voices.json").write_text(json.dumps({"episode": ep.id, "words": len(text.split()), "voices": made},
+                                                indent=2) + "\n", encoding="utf-8")
+    _print({"episode": ep.id, "made": [m["file"] for m in made]})
+    return 0 if made else 1
 
 
 def cmd_fallback(args, cfg) -> int:
@@ -231,6 +271,7 @@ def main(argv=None) -> int:
     s = sub.add_parser("fallback", help="backup writer + publish safety net")
     s.add_argument("--date"); s.add_argument("--now"); s.add_argument("--force", action="store_true")
     sub.add_parser("probe", help="Phase 0: check feeds and Gemini models")
+    sub.add_parser("voices", help="record a short excerpt in each candidate voice into voices/")
     s = sub.add_parser("vercel-setup", help="create the Vercel project if needed and link the site folder")
     s.add_argument("--site", default="site")
     sub.add_parser("vercel-domain", help="print the Vercel project's production URL")
@@ -242,7 +283,7 @@ def main(argv=None) -> int:
     args = p.parse_args(argv)
     cfg = load()
     return {"today": cmd_today, "validate": cmd_validate, "publish": cmd_publish, "fallback": cmd_fallback,
-            "probe": cmd_probe, "vercel-setup": cmd_vercel_setup,
+            "probe": cmd_probe, "voices": cmd_voices, "vercel-setup": cmd_vercel_setup,
             "vercel-domain": cmd_vercel_domain, "vercel-unstick": cmd_vercel_unstick,
             "vercel-status": cmd_vercel_status, "vercel-wait": cmd_vercel_wait}[args.cmd](args, cfg)
 

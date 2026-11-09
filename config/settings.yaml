@@ -25,7 +25,9 @@ episode:
   weekdays: [0, 1, 2, 3, 4]        # Monday = 0
 
 audio:
-  voice: "en-GB-RyanNeural"
+  engine: "edge"                   # "edge" (Microsoft, online) or "kokoro" (open-source, runs on the runner)
+  voice: "en-GB-RyanNeural"        # kokoro voices: bm_george, bm_lewis, bf_emma, am_michael, af_heart, ...
+  speed: 1.0                       # kokoro only
   rate: "+0%"
   bitrate_kbps: 48                 # edge-tts default output: 24 kHz mono 48 kbit/s MP3
 

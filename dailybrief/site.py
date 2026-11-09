@@ -149,6 +149,28 @@ def index_html(items: list[Item], cfg: Config) -> str:
 """
 
 
+def voices_html(data: dict, cfg: Config) -> str:
+    rows = []
+    for i, v in enumerate(data.get("voices", []), start=1):
+        tag = ' <span class="now">current</span>' if v.get("current") else ""
+        rows.append(f"""<article><div class="date">Voice {i} · {escape(v['engine'])} · <code>{escape(v['voice'])}</code></div>
+  <h2>{escape(v['label'])}{tag}</h2>
+  <audio controls preload="none" src="voices/{escape(v['file'])}"></audio></article>""")
+    return f"""<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>Voices · {escape(cfg.show['title'])}</title>
+<link rel="icon" href="cover.png"><style>{INDEX_CSS}
+.now{{font-size:12px;font-weight:600;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:1px 8px;margin-left:6px;vertical-align:middle}}
+code{{font-size:13px}}</style></head>
+<body><main>
+<h1>Pick a voice</h1>
+<p class="lead">The same excerpt from the {escape(data.get('episode',''))} episode in {len(rows)} free voices. Tell Claude the number you like best.</p>
+{''.join(rows)}
+<p class="lead"><a href="./" style="color:var(--accent)">Back to episodes</a></p>
+</main></body></html>
+"""
+
+
 def make_cover(path: Path, title: str) -> None:
     from PIL import Image, ImageDraw, ImageFont  # Pillow: requirements.txt
 
@@ -191,6 +213,11 @@ def build(items: list[Item], cfg: Config, out: Path) -> dict:
     make_cover(out / "cover.png", cfg.show["title"])
     (out / "feed.xml").write_text(feed_xml(items, cfg), encoding="utf-8")
     (out / "index.html").write_text(index_html(items, cfg), encoding="utf-8")
+    voices_dir = cfg.root / "voices"
+    if (voices_dir / "voices.json").exists():
+        shutil.copytree(voices_dir, out / "voices")
+        (out / "voices.html").write_text(voices_html(json.loads((voices_dir / "voices.json").read_text()), cfg),
+                                         encoding="utf-8")
     (out / "robots.txt").write_text("User-agent: *\nDisallow: /\n", encoding="utf-8")
     (out / "vercel.json").write_text(json.dumps({
         "headers": [

@@ -1,0 +1,55 @@
+name: Voice samples
+
+# Records the same ~45-second excerpt of the latest episode in each candidate voice (voices/),
+# commits the MP3s and redeploys the site so they can be compared at <site>/voices.html.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TZ: Europe/Brussels
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq espeak-ng ffmpeg
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements.txt "kokoro>=0.9.4" soundfile
+
+      - name: Cache Kokoro model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-kokoro-82m
+
+      - name: Record samples
+        run: python -m dailybrief.cli voices
+
+      - name: Commit samples
+        run: |
+          git config user.name "daily-brief-bot"
+          git config user.email "daily-brief-bot@users.noreply.github.com"
+          git add voices
+          git commit -m "voices: samples for comparison [skip ci]" || exit 0
+          git pull --rebase --autostash origin main
+          git push
+
+  publish:
+    needs: record
+    uses: ./.github/workflows/publish.yml
+    secrets: inherit

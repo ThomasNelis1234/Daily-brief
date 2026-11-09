@@ -24,7 +24,7 @@ permissions:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60
     env:
       TZ: Europe/Brussels
       VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
@@ -39,7 +39,20 @@ jobs:
           cache: pip
 
       - name: Install
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
+          if python -c "import yaml,sys;sys.exit(0 if yaml.safe_load(open('config/settings.yaml'))['audio'].get('engine')=='kokoro' else 1)"; then
+            echo "Voice engine: kokoro"
+            sudo apt-get update -qq && sudo apt-get install -y -qq espeak-ng ffmpeg
+            pip install torch --index-url https://download.pytorch.org/whl/cpu
+            pip install "kokoro>=0.9.4" soundfile
+          fi
+
+      - name: Cache Kokoro model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-kokoro-82m
 
       - name: Run tests
         run: python -m unittest discover -s tests -t . -q
