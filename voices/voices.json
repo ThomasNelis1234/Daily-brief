@@ -1,0 +1,62 @@
+{
+  "episode": "2026-11-09",
+  "words": 175,
+  "voices": [
+    {
+      "engine": "edge",
+      "voice": "en-GB-RyanNeural",
+      "label": "Current voice (Microsoft, British male)",
+      "file": "edge-en-GB-RyanNeural.mp3",
+      "current": true
+    },
+    {
+      "engine": "edge",
+      "voice": "en-US-AndrewMultilingualNeural",
+      "label": "Microsoft, American male, newer model",
+      "file": "edge-en-US-AndrewMultilingualNeural.mp3",
+      "current": false
+    },
+    {
+      "engine": "edge",
+      "voice": "en-US-AvaMultilingualNeural",
+      "label": "Microsoft, American female, newer model",
+      "file": "edge-en-US-AvaMultilingualNeural.mp3",
+      "current": false
+    },
+    {
+      "engine": "kokoro",
+      "voice": "bm_george",
+      "label": "Kokoro, British male",
+      "file": "kokoro-bm_george.mp3",
+      "current": false
+    },
+    {
+      "engine": "kokoro",
+      "voice": "bm_lewis",
+      "label": "Kokoro, British male",
+      "file": "kokoro-bm_lewis.mp3",
+      "current": false
+    },
+    {
+      "engine": "kokoro",
+      "voice": "bf_emma",
+      "label": "Kokoro, British female",
+      "file": "kokoro-bf_emma.mp3",
+      "current": false
+    },
+    {
+      "engine": "kokoro",
+      "voice": "am_michael",
+      "label": "Kokoro, American male",
+      "file": "kokoro-am_michael.mp3",
+      "current": false
+    },
+    {
+      "engine": "kokoro",
+      "voice": "af_heart",
+      "label": "Kokoro, American female (often rated most natural)",
+      "file": "kokoro-af_heart.mp3",
+      "current": false
+    }
+  ]
+}
