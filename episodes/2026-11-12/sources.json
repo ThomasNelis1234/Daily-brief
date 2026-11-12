@@ -1,0 +1,125 @@
+{
+ "date": "2026-11-12",
+ "sources": [
+  {
+   "id": "S1",
+   "section": "ai",
+   "title": "Adobe will let outside AI agents edit Photoshop and Premiere files",
+   "publisher": "The Next Web",
+   "url": "https://thenextweb.com/news/adobe-mcp-integrations-photoshop-premiere-ai-agents",
+   "date": "2026-11-10"
+  },
+  {
+   "id": "S2",
+   "section": "ai",
+   "title": "Adobe Widens Google Deal as Photoshop MCP Sets a 2027 Beta",
+   "publisher": "FourWeekMBA",
+   "url": "https://fourweekmba.com/ai-adobe-widens-google-deal-as-photoshop-mcp-sets-a-2027-beta/",
+   "date": "2026-11-10"
+  },
+  {
+   "id": "S3",
+   "section": "ai",
+   "title": "Newsroom",
+   "publisher": "Anthropic",
+   "url": "https://www.anthropic.com/news",
+   "date": "2026-11-10"
+  },
+  {
+   "id": "S4",
+   "section": "ai",
+   "title": "Everything That Happened in AI Today Wednesday, November 11",
+   "publisher": "The Neuron",
+   "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-november-11-2026/",
+   "date": "2026-11-11"
+  },
+  {
+   "id": "S5",
+   "section": "politics",
+   "title": "LIVE Begrotingsgesprek tussen premier De Wever en vicepremier Van Peteghem afgelopen",
+   "publisher": "VRT NWS",
+   "url": "https://www.vrt.be/vrtnws/nl/liveblog/begrotingsgesprek-tussen-premier-de-wever-en-vicepremier-van-pet~1793247532380/",
+   "date": "2026-11-11"
+  },
+  {
+   "id": "S6",
+   "section": "politics",
+   "title": "Crise budgétaire fédérale : Bart De Wever clôture ses réunions bilatérales avec Vincent Van Peteghem",
+   "publisher": "BX1",
+   "url": "https://bx1.be/categories/news/crise-budgetaire-federale-bart-de-wever-cloture-ses-reunions-bilaterales-avec-vincent-van-peteghem",
+   "date": "2026-11-11"
+  },
+  {
+   "id": "S7",
+   "section": "politics",
+   "title": "Council and Parliament reach agreement on 2027 EU Budget",
+   "publisher": "EUbusiness",
+   "url": "https://www.eubusiness.com/finance/council-and-parliament-reach-agreement-on-2027-eu-budget/",
+   "date": "2026-11-11"
+  },
+  {
+   "id": "S8",
+   "section": "politics",
+   "title": "'Large-scale' prisoner exchange agreed as 2nd day of Abu Dhabi talks concludes, Umerov says",
+   "publisher": "The Kyiv Independent",
+   "url": "https://kyivindependent.com/large-scale-prisoner-exchange-agreed-as-2nd-day-of-abu-dhabi-talks-concludes-umerov-says/",
+   "date": "2026-11-11"
+  },
+  {
+   "id": "S9",
+   "section": "politics",
+   "title": "Russia, Ukraine reach deal on prisoner swap as US says lack of trust holds back talks",
+   "publisher": "Reuters via Yahoo News",
+   "url": "https://sg.news.yahoo.com/us-russia-ukraine-start-second-101205618.html",
+   "date": "2026-11-11"
+  },
+  {
+   "id": "S10",
+   "section": "politics",
+   "title": "Everything That Happened in AI Today Wednesday, November 11",
+   "publisher": "The Neuron",
+   "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-november-11-2026/",
+   "date": "2026-11-11"
+  },
+  {
+   "id": "S11",
+   "section": "energy",
+   "title": "Elia fait de l'ordre dans les demandes de raccordement au réseau",
+   "publisher": "La Libre (Belga)",
+   "url": "https://www.lalibre.be/dernieres-depeches/2026/11/10/elia-fait-de-lordre-dans-les-demandes-de-raccordement-au-reseau-YWGZAFRR35EZNCW55ENNDMBBJ4/",
+   "date": "2026-11-10"
+  },
+  {
+   "id": "S12",
+   "section": "energy",
+   "title": "LF Energy receives $2.5 million in funding from Google to advance open-source tools for European power grids",
+   "publisher": "Renewable Energy Magazine",
+   "url": "https://renewableenergymagazine.com/miscellaneous/lf-energy-receives-2-5-million-in-20261110",
+   "date": "2026-11-10"
+  },
+  {
+   "id": "S13",
+   "section": "energy",
+   "title": "European power prices hit four-year highs amid gas price surge, weak wind",
+   "publisher": "Balkan Green Energy News",
+   "url": "https://balkangreenenergynews.com/european-power-prices-hit-four-year-highs-amid-gas-price-surge-weak-wind/",
+   "date": "2026-11-11"
+  },
+  {
+   "id": "S14",
+   "section": "energy",
+   "title": "STATEMENT: Countries Endorse 35x35 Electrification Pledge at COP31",
+   "publisher": "World Resources Institute",
+   "url": "https://www.wri.org/news/statement-countries-endorse-35x35-electrification-pledge-cop31",
+   "date": "2026-11-11"
+  },
+  {
+   "id": "S15",
+   "section": "energy",
+   "title": "COP31 host Turkey to push global electrification goal",
+   "publisher": "RTÉ",
+   "url": "https://www.rte.ie/news/environment/2026/1110/1598617-cop31-turkey/",
+   "date": "2026-11-10"
+  }
+ ]
+}
