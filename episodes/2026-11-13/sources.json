@@ -1,0 +1,141 @@
+{
+ "date": "2026-11-13",
+ "sources": [
+  {
+   "id": "S1",
+   "section": "ai",
+   "title": "NVIDIA Announces CEO Transition (Form 8-K exhibit)",
+   "publisher": "NVIDIA / SEC EDGAR",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm",
+   "date": "2026-11-12"
+  },
+  {
+   "id": "S2",
+   "section": "ai",
+   "title": "Nvidia board weighs Jensen Huang's future: Can it remove its founder?",
+   "publisher": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/12/nvidia-board-weighs-jensen-huangs-future-can-it-remove-its-founder",
+   "date": "2026-11-12"
+  },
+  {
+   "id": "S3",
+   "section": "ai",
+   "title": "United is restricting AI agents from booking flights",
+   "publisher": "Engadget",
+   "url": "https://www.engadget.com/2314121/united-is-restricting-ai-agents-from-booking-flights/",
+   "date": "2026-11-11"
+  },
+  {
+   "id": "S4",
+   "section": "ai",
+   "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+   "publisher": "Google",
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+   "date": "2026-11-11"
+  },
+  {
+   "id": "S5",
+   "section": "ai",
+   "title": "Everything That Happened in AI Today Thursday, November 12",
+   "publisher": "The Neuron",
+   "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-12-2026/",
+   "date": "2026-11-12"
+  },
+  {
+   "id": "S6",
+   "section": "politics",
+   "title": "LIVE MR-voorzitter Georges-Louis Bouchez schuift mee aan tafel voor begrotingsgesprekken",
+   "publisher": "VRT NWS",
+   "url": "https://vrt.be/vrtnws/nl/liveblog/premier-de-wever-trekt-begrotingsonderhandelingen-morgen-opnieuw~1793247532380",
+   "date": "2026-11-12"
+  },
+  {
+   "id": "S7",
+   "section": "politics",
+   "title": "Weinig hoop op doorbraak bij nieuw begrotingsoverleg regering-De Wever",
+   "publisher": "De Standaard (via De Krantenkoppen)",
+   "url": "https://www.dekrantenkoppen.be/detail/3964414.html",
+   "date": "2026-11-12"
+  },
+  {
+   "id": "S8",
+   "section": "politics",
+   "title": "EU leaders to meet in Dublin for AI summit next week",
+   "publisher": "The Brussels Times",
+   "url": "https://www.brusselstimes.com/2390745/eu-leaders-to-meet-in-dublin-for-ai-summit-next-week",
+   "date": "2026-11-04"
+  },
+  {
+   "id": "S9",
+   "section": "politics",
+   "title": "First talks about EU envoy on Ukraine war to dominate Dublin summits",
+   "publisher": "EUobserver",
+   "url": "https://euobserver.com/248409/first-talks-about-eu-envoy-on-ukraine-war-to-dominate-dublin-summits/",
+   "date": "2026-11-12"
+  },
+  {
+   "id": "S10",
+   "section": "politics",
+   "title": "LIVE: European leaders gather in Dublin (EPC summit)",
+   "publisher": "The Irish Times",
+   "url": "https://www.irishtimes.com/politics/2026/11/12/eu-meetings-dublin-road-closures-traffic-disruption-latest/",
+   "date": "2026-11-12"
+  },
+  {
+   "id": "S11",
+   "section": "politics",
+   "title": "Zelenskyy meets Witkoff, Kushner in Ireland; announces major prisoner exchange, greater European role in Ukraine peace talks",
+   "publisher": "The Tribune (ANI)",
+   "url": "https://tribuneindia.com/news/diplomatic-efforts/zelenskyy-meets-witkoff-kushner-in-ireland-announces-major-prisoner-exchange-greater-european-role-in-ukraine-peace-talks",
+   "date": "2026-11-13"
+  },
+  {
+   "id": "S12",
+   "section": "energy",
+   "title": "LIVE Energiekosten voor gemiddeld Vlaams gezin stijgen alweer: hoogste factuur in bijna 4 jaar",
+   "publisher": "VRT NWS",
+   "url": "https://vrt.be/vrtnws/nl/liveblog/dunkelflaute-en-duur-aardgas-doen-stroomprijzen-pieken~1774343778229",
+   "date": "2026-11-12"
+  },
+  {
+   "id": "S13",
+   "section": "energy",
+   "title": "Stroom 3 keer duurder door 'dunkelflaute': amper wind en zon, duur gas en plots viel dan nog een kernreactor uit",
+   "publisher": "VRT NWS",
+   "url": "https://www.vrt.be/vrtnws/nl/2026/11/11/stroomprijzen-al-drie-dagen-op-recordhoogte-helft-geproduceerde/",
+   "date": "2026-11-11"
+  },
+  {
+   "id": "S14",
+   "section": "energy",
+   "title": "European Gas Prices Rebound as Iran War Uncertainty and Winter Cold Risks Mount",
+   "publisher": "Eurasia Business News",
+   "url": "https://eurasiabusinessnews.com/2026/11/12/european-gas-prices-rebound-as-iran-war-uncertainty-and-winter-cold-risks-mount/",
+   "date": "2026-11-11"
+  },
+  {
+   "id": "S15",
+   "section": "energy",
+   "title": "European Gas Swings With Storage Worries Countering Iran Hopes",
+   "publisher": "Energy Connects (Bloomberg)",
+   "url": "https://www.energyconnects.com/news/utilities/2026/november/european-gas-swings-with-storage-worries-countering-iran-hopes/",
+   "date": "2026-11-10"
+  },
+  {
+   "id": "S16",
+   "section": "energy",
+   "title": "World leaders gather at COP31 as fossil fuel talks stall",
+   "publisher": "Cyprus Mail (Reuters)",
+   "url": "https://cyprus-mail.com/2026/11/11/world-leaders-gather-at-cop31-as-fossil-fuel-talks-stall",
+   "date": "2026-11-11"
+  },
+  {
+   "id": "S17",
+   "section": "energy",
+   "title": "Push for ocean roadmap that informs next global stocktake grows at COP31",
+   "publisher": "Climate Home News",
+   "url": "https://www.climatechangenews.com/2026/11/12/push-ocean-roadmap-informs-next-global-stocktake-grows-cop31-antalya/",
+   "date": "2026-11-12"
+  }
+ ]
+}
