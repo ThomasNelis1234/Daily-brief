@@ -1,0 +1,165 @@
+{
+ "date": "2026-11-17",
+ "sources": [
+  {
+   "id": "S1",
+   "section": "ai",
+   "title": "California Sues OpenAI Over 'Entirely Foreseeable' Breaches",
+   "publisher": "Bloomberg Law",
+   "url": "https://news.bloomberglaw.com/esg/california-sues-openai-over-entirely-forseeable-agent-breaches",
+   "date": "2026-11-16"
+  },
+  {
+   "id": "S2",
+   "section": "ai",
+   "title": "California Sues OpenAI Over Rogue AI Agent Hacks",
+   "publisher": "KQED",
+   "url": "https://www.kqed.org/news/12109909/california-sues-openai-over-rogue-ai-agent-hacks",
+   "date": "2026-11-16"
+  },
+  {
+   "id": "S3",
+   "section": "ai",
+   "title": "Apple reveals new Mac security controls as AI agents raise privacy risks",
+   "publisher": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/16/apple-reveals-new-mac-security-controls-as-ai-agents-raise-privacy-risks/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": "S4",
+   "section": "ai",
+   "title": "Qwen4-Max: Features, Benchmarks, and Pricing",
+   "publisher": "DataCamp",
+   "url": "https://www.datacamp.com/blog/qwen4-max",
+   "date": "2026-11-16"
+  },
+  {
+   "id": "S5",
+   "section": "ai",
+   "title": "Alibaba releases Qwen4-Max with 1M context",
+   "publisher": "CASRAI",
+   "url": "https://casrai.org/news/alibaba-qwen4-max-general-release-million-token-context-2026",
+   "date": "2026-11-16"
+  },
+  {
+   "id": "S6",
+   "section": "politics",
+   "title": "Begrotingscrisis blijft aanslepen: De Wever mag van koning verder onderhandelen",
+   "publisher": "Business AM",
+   "url": "https://businessam.be/begrotingscrisis-blijft-aanslepen-de-wever-mag-van-koning-verder-onderhandelen",
+   "date": "2026-11-16"
+  },
+  {
+   "id": "S7",
+   "section": "politics",
+   "title": "\"De Wever reageerde emotioneel\": hoe koppigheid van Vooruit en perslekken premier tot het uiterste drijven",
+   "publisher": "VRT NWS",
+   "url": "https://www.vrt.be/vrtnws/nl/2026/11/16/begrotingsonderhandelingen-federale-regering-waar-liggen-de-bree/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": "S8",
+   "section": "politics",
+   "title": "Koning vraagt aan premier De Wever om onderhandelingen voort te zetten",
+   "publisher": "BRUZZ",
+   "url": "https://www.bruzz.be/actua/politiek/enkel-vooruit-het-niet-eens-met-begroting-de-wever-moet-zonder-akkoord-naar-de-koning-2026-11-16",
+   "date": "2026-11-16"
+  },
+  {
+   "id": "S9",
+   "section": "politics",
+   "title": "LIVE Oppositie kritisch nu premier De Wever week extra tijd krijgt van koning om begrotingsakkoord te vinden",
+   "publisher": "VRT NWS",
+   "url": "https://vrt.be/vrtnws/nl/liveblog/premier-de-wever-krijgt-week-extra-van-de-koning-om-een-akkoord-~1793247532380",
+   "date": "2026-11-16"
+  },
+  {
+   "id": "S10",
+   "section": "politics",
+   "title": "Holding talks with Russia on Europe's security now would be premature, EU ministers say",
+   "publisher": "Reuters (via Internazionale)",
+   "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/16/holding-talks-with-russia-on-europe-s-security-now-would-be-premature-eu-ministers-say",
+   "date": "2026-11-16"
+  },
+  {
+   "id": "S11",
+   "section": "politics",
+   "title": "EU ministers agree to move ahead with EU-Syria deal, Kallas says",
+   "publisher": "Arab News",
+   "url": "https://www.arabnews.com/middle-east/eu-ministers-agree-to-move-ahead-with-eu-syria-deal-kallas-says-3012197",
+   "date": "2026-11-16"
+  },
+  {
+   "id": "S12",
+   "section": "politics",
+   "title": "Zelenskyy hopes UAE can host another round of Ukraine peace talks",
+   "publisher": "The National",
+   "url": "https://www.thenationalnews.com/news/us/2026/11/16/zelenskyy-hopes-uae-can-host-another-round-of-ukraine-peace-talks/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": "S13",
+   "section": "politics",
+   "title": "Trump heads to Asia for 2nd high-stakes meeting with Chinese leader",
+   "publisher": "ABC News",
+   "url": "https://abcnews.com/Politics/trump-heads-asia-2nd-high-stakes-meeting-chinese/story?id=138059807",
+   "date": "2026-11-16"
+  },
+  {
+   "id": "S14",
+   "section": "energy",
+   "title": "Depraetere kaatst bal terug na afblazen nieuwe warmtenetten in Antwerpen",
+   "publisher": "VRT NWS",
+   "url": "https://vrt.be/vrtnws/nl/2026/11/16/depraetere-reactie-warmtenetten-antwerpen-stopzetting",
+   "date": "2026-11-16"
+  },
+  {
+   "id": "S15",
+   "section": "energy",
+   "title": "Warmtenetten in Antwerpen op losse schroeven: Fluvius stopt alle toekomstige projecten",
+   "publisher": "VRT NWS",
+   "url": "https://vrt.be/vrtnws/nl/2026/11/15/fluvius-warmtenetten-antwerpen",
+   "date": "2026-11-15"
+  },
+  {
+   "id": "S16",
+   "section": "energy",
+   "title": "EU Natural Gas - Price - Chart - Historical Data - News",
+   "publisher": "Trading Economics",
+   "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
+   "date": "2026-11-16"
+  },
+  {
+   "id": "S17",
+   "section": "energy",
+   "title": "Burn now, pay later: Europe drains gas storage as TTF nears €100",
+   "publisher": "Energy Flux",
+   "url": "https://www.energyflux.news/burn-now-pay-later/",
+   "date": "2026-11-13"
+  },
+  {
+   "id": "S18",
+   "section": "energy",
+   "title": "EU Carbon Slips Below €90 on Free-Permit Deal as Cold Snap Tests Europe's Thin Gas Buffer",
+   "publisher": "Serbia Energy News",
+   "url": "https://serbia-energy.eu/eu-carbon-slips-below-e90-on-free-permit-deal-as-cold-snap-tests-europes-thin-gas-buffer/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": "S19",
+   "section": "energy",
+   "title": "First draft of COP31 deal signals tough negotiations to come",
+   "publisher": "Reuters (via SRN News)",
+   "url": "https://srnnews.com/first-draft-of-cop31-deal-signals-tough-negotiations-to-come/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": "S20",
+   "section": "term",
+   "title": "Qwen4-Max: Features, Benchmarks, and Pricing",
+   "publisher": "DataCamp",
+   "url": "https://www.datacamp.com/blog/qwen4-max",
+   "date": "2026-11-16"
+  }
+ ]
+}
