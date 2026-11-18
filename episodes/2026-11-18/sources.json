@@ -1,0 +1,101 @@
+{
+ "date": "2026-11-18",
+ "sources": [
+  {
+   "id": "S1",
+   "section": "ai",
+   "title": "'Essentially unusable': OpenAI launches GPT-6.2 Astra and Sol to negative reception from AI power users",
+   "publisher": "VentureBeat",
+   "url": "https://venturebeat.com/technology/essentially-unusable-openai-launches-gpt-6-2-astra-and-sol-to-negative-reception-from-ai-power-users",
+   "date": "2026-11-17"
+  },
+  {
+   "id": "S2",
+   "section": "ai",
+   "title": "Anthropic Sets IPO Price Range at $70 to $78, Valuing Company at Up to $1.4 Trillion",
+   "publisher": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-sets-ipo-price-range-140602411.html",
+   "date": "2026-11-10"
+  },
+  {
+   "id": "S3",
+   "section": "ai",
+   "title": "Amazon and Google will together own nearly 30% of Anthropic after its IPO",
+   "publisher": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo/",
+   "date": "2026-11-17"
+  },
+  {
+   "id": "S4",
+   "section": "politics",
+   "title": "Vandenbroucke verwijt De Wever mislukking begrotingsoverleg en hekelt invloed van Bouchez",
+   "publisher": "Business AM",
+   "url": "https://businessam.be/vandenbroucke-verwijt-de-wever-mislukking-begrotingsoverleg-en-hekelt-invloed-van-bouchez",
+   "date": "2026-11-17"
+  },
+  {
+   "id": "S5",
+   "section": "politics",
+   "title": "Vooruit prefers a budget agreement to new Belgian elections",
+   "publisher": "The Brussels Times",
+   "url": "https://www.brusselstimes.com/belgium/2410064/vooruit-prefers-a-budget-agreement-to-new-belgian-elections",
+   "date": "2026-11-17"
+  },
+  {
+   "id": "S6",
+   "section": "politics",
+   "title": "LIVE Premier De Wever krijgt week extra van de koning om een akkoord te sluiten",
+   "publisher": "VRT NWS",
+   "url": "https://www.vrt.be/vrtnws/nl/liveblog/premier-de-wever-krijgt-week-extra-van-de-koning-om-een-akkoord-~1793247532380/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": "S7",
+   "section": "politics",
+   "title": "Ukraine holds peace talks with US, Europe as conflict escalates",
+   "publisher": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/17/ukraine-holds-peace-talks-with-us-europe-as-conflict-escalates",
+   "date": "2026-11-17"
+  },
+  {
+   "id": "S8",
+   "section": "politics",
+   "title": "Zelensky announces Berlin talks with US, European allies to shape next phase of Russia negotiations",
+   "publisher": "The Kyiv Independent",
+   "url": "https://kyivindependent.com/zelensky-announces-berlin-talks-with-us-european-allies-to-shape-next-phase-of-russia-negotiations/",
+   "date": "2026-11-17"
+  },
+  {
+   "id": "S9",
+   "section": "energy",
+   "title": "Belgian nuclear power plant negotiations extended",
+   "publisher": "World Nuclear News",
+   "url": "https://www.world-nuclear-news.org/articles/belgian-nuclear-power-plant-negotiations-extended",
+   "date": "2026-11-05"
+  },
+  {
+   "id": "S10",
+   "section": "energy",
+   "title": "Electricity production in Belgium reaches 20-year low point",
+   "publisher": "The Brussels Times",
+   "url": "https://www.brusselstimes.com/belgium/2384840/electricity-production-in-belgium-reaches-20-year-low-point",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "S11",
+   "section": "energy",
+   "title": "TTF Gas Bounces Back to 86 Euros as Hormuz Risks Resurface",
+   "publisher": "OilPrice.com",
+   "url": "https://oilprice.com/Latest-Energy-News/World-News/TTF-Gas-Bounces-Back-to-86-Euros-as-Hormuz-Risks-Resurface.html",
+   "date": "2026-11-17"
+  },
+  {
+   "id": "S12",
+   "section": "energy",
+   "title": "Tensions rise over draft climate deal at COP31",
+   "publisher": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/17/tensions-rise-over-draft-climate-deal-at-cop31",
+   "date": "2026-11-17"
+  }
+ ]
+}
