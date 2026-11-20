@@ -1,4 +1,11 @@
 {
+  "2026-11-20": {
+    "published_at": "2026-11-20T05:20:57+01:00",
+    "writer": "claude",
+    "script_sha": "5acb67d1126f3b26d4eaa29c64ef273594b3c7bb762681692bb6f5ef38eddadf",
+    "duration_s": 831,
+    "bytes": 4987440
+  },
   "2026-11-19": {
     "published_at": "2026-11-19T05:19:15+01:00",
     "writer": "claude",
