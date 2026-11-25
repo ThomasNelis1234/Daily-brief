@@ -1,0 +1,133 @@
+{
+ "date": "2026-11-25",
+ "sources": [
+  {
+   "id": "S1",
+   "section": "ai",
+   "title": "Anthropic's Claude Ship automates the final stage of the software development pipeline",
+   "publisher": "SiliconANGLE",
+   "url": "https://siliconangle.com/2026/11/23/anthropics-claude-ship-automates-the-final-stage-of-the-software-development-pipeline/",
+   "date": "2026-11-23"
+  },
+  {
+   "id": "S2",
+   "section": "ai",
+   "title": "Anthropic launches new Claude Ship feature for builders",
+   "publisher": "9to5Mac",
+   "url": "https://9to5mac.com/2026/11/23/anthropic-launches-new-claude-ship-feature-for-builders/",
+   "date": "2026-11-23"
+  },
+  {
+   "id": "S3",
+   "section": "ai",
+   "title": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director (Form 8-K exhibit)",
+   "publisher": "NVIDIA / SEC EDGAR",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000090/nov23pressrelease.htm",
+   "date": "2026-11-23"
+  },
+  {
+   "id": "S4",
+   "section": "ai",
+   "title": "Everything That Happened in AI Today (Tuesday, November 24, 2026)",
+   "publisher": "The Neuron",
+   "url": "https://theneuron.ai/digest/everything-that-happened-in-ai-today-november-24-2026",
+   "date": "2026-11-24"
+  },
+  {
+   "id": "S5",
+   "section": "ai",
+   "title": "Amazon puts 7 billion on the table for Decart",
+   "publisher": "ITdaily",
+   "url": "https://itdaily.com/news/business/amazon-puts-7-billion-on-the-table-for-decart/",
+   "date": "2026-10-12"
+  },
+  {
+   "id": "S6",
+   "section": "politics",
+   "title": "LIVE Rousseau na overleg: \"Mijn vragen zijn niet beantwoord\", regering gaat op zoek naar méér dan 10 miljard euro",
+   "publisher": "VRT NWS",
+   "url": "https://www.vrt.be/vrtnws/nl/liveblog/rousseau-na-overleg-mijn-vragen-zijn-niet-beantwoord-regerin~1793247532380/",
+   "date": "2026-11-24"
+  },
+  {
+   "id": "S7",
+   "section": "politics",
+   "title": "EU proposes package of Russian sports sanctions, visa bans, and a Krygyzstan crypto blockade",
+   "publisher": "The Kyiv Independent",
+   "url": "https://kyivindependent.com/eu-proposes-package-of-russian-sports-sanctions-visa-bans-and-a-krygyzstan-crypto-blockade/",
+   "date": "2026-11-23"
+  },
+  {
+   "id": "S8",
+   "section": "politics",
+   "title": "Europe Tonight debriefs: can the EU budget compete with China and the US?",
+   "publisher": "Euronews",
+   "url": "https://www.euronews.com/2026/11/24/europe-tonight-debriefs-can-the-eu-budget-compete-with-china-and-the-us",
+   "date": "2026-11-24"
+  },
+  {
+   "id": "S9",
+   "section": "politics",
+   "title": "Zelenskyy: Trump's envoys pushing for peace deal \"as soon as possible\"",
+   "publisher": "European Pravda",
+   "url": "https://www.eurointegration.com.ua/eng/news/2026/11/24/7250689/",
+   "date": "2026-11-24"
+  },
+  {
+   "id": "S10",
+   "section": "politics",
+   "title": "Zelensky says Ukraine will seek greater US support and sanctions if peace deal fails",
+   "publisher": "h.ua",
+   "url": "https://en.h.ua/2026/11/24/zelensky-trump-envoys-ukraine-peace-deal-january",
+   "date": "2026-11-24"
+  },
+  {
+   "id": "S11",
+   "section": "politics",
+   "title": "Last CIS survey before the elections: the PSOE would win and PP and Vox would not add up to an absolute majority",
+   "publisher": "Ara",
+   "url": "https://en.ara.cat/politics/last-cis-poll-before-the-elections-the-psoe-would-win-and-pp-and-vox-would-not-add-up-to-an-absolute-majority_1_5908467.html",
+   "date": "2026-11-12"
+  },
+  {
+   "id": "S12",
+   "section": "energy",
+   "title": "European Gas Jumps 8.6% to €96 a Megawatt-Hour as Cold Forecasts Meet the Lowest Storage Levels in a Decade",
+   "publisher": "The Private Banker",
+   "url": "https://leprivatebanker.com/2026/11/24/european-gas-jumps-8-6-to-e96-a-megawatt-hour-as-cold-forecasts-meet-the-lowest-storage-levels-in-a-decade/",
+   "date": "2026-11-24"
+  },
+  {
+   "id": "S13",
+   "section": "energy",
+   "title": "Électricité chère même la nuit : le type de contrat qui vous fait payer la flambée de novembre",
+   "publisher": "Selectra",
+   "url": "https://selectra.be/fr/energie/actualites/electricite-prix-record-novembre-contrat-variable",
+   "date": "2026-11-16"
+  },
+  {
+   "id": "S14",
+   "section": "energy",
+   "title": "Good Heat snaps €2M to replace industrial gas boilers with heat batteries it owns and operates",
+   "publisher": "Tech Funding News",
+   "url": "https://techfundingnews.com/good-heat-raises-2m-industrial-heat-batteries/",
+   "date": "2026-11-24"
+  },
+  {
+   "id": "S15",
+   "section": "energy",
+   "title": "Belgian nuclear power plant negotiations extended",
+   "publisher": "World Nuclear News",
+   "url": "https://www.world-nuclear-news.org/articles/belgian-nuclear-power-plant-negotiations-extended",
+   "date": "2026-11-05"
+  },
+  {
+   "id": "S16",
+   "section": "term",
+   "title": "Anthropic's Claude Ship automates the final stage of the software development pipeline",
+   "publisher": "SiliconANGLE",
+   "url": "https://siliconangle.com/2026/11/23/anthropics-claude-ship-automates-the-final-stage-of-the-software-development-pipeline/",
+   "date": "2026-11-23"
+  }
+ ]
+}
