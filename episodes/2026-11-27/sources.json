@@ -1,0 +1,173 @@
+{
+ "date": "2026-11-27",
+ "sources": [
+  {
+   "id": "S1",
+   "section": "ai",
+   "title": "Volvo Car testing humanoid robots in Ghent",
+   "publisher": "VRT NWS",
+   "url": "https://www.vrt.be/vrtnws/en/2026/11/26/volvo-car-testing-humanoid-robots-in-ghent/",
+   "date": "2026-11-26"
+  },
+  {
+   "id": "S2",
+   "section": "ai",
+   "title": "Volvo Cars trains Hexagon Robotics' humanoids for manufacturing in Ghent",
+   "publisher": "New Mobility News",
+   "url": "https://newmobility.news/en/2026/11/26/volvo-cars-trains-hexagon-robotics-humanoids-for-manufacturing-in-ghent/",
+   "date": "2026-11-26"
+  },
+  {
+   "id": "S3",
+   "section": "ai",
+   "title": "Volvo starts training humanoid robots for its Belgian car factory",
+   "publisher": "The Next Web",
+   "url": "https://thenextweb.com/news/volvo-humanoid-robots-hexagon-aeon-ghent",
+   "date": "2026-11-26"
+  },
+  {
+   "id": "S4",
+   "section": "ai",
+   "title": "Volvo Trains Hexagon AEON Humanoids in Ghent: What the 10 kg Limit Allows",
+   "publisher": "i10x",
+   "url": "https://i10x.ai/news/volvo-hexagon-aeon-humanoid-robots-ghent-factory-pilot-2027",
+   "date": "2026-11-26"
+  },
+  {
+   "id": "S5",
+   "section": "ai",
+   "title": "EU proposes €50bn Sovereign Tech Equity Fund for AI and quantum",
+   "publisher": "The Next Web",
+   "url": "https://thenextweb.com/news/eu-50bn-sovereign-tech-equity-fund-ai-quantum",
+   "date": "2026-11-25"
+  },
+  {
+   "id": "S6",
+   "section": "ai",
+   "title": "Everything That Happened in AI Today (Thursday, November 26, 2026)",
+   "publisher": "The Neuron",
+   "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-november-26-2026/",
+   "date": "2026-11-26"
+  },
+  {
+   "id": "S7",
+   "section": "ai",
+   "title": "OpenAI ChatGPT and Codex shared limits",
+   "publisher": "The New Stack",
+   "url": "https://thenewstack.io/openai-chatgpt-codex-shared-limits/",
+   "date": "2026-11-02"
+  },
+  {
+   "id": "S8",
+   "section": "politics",
+   "title": "Liveblog: Premier roept maandag partijvoorzitters bijeen",
+   "publisher": "VRT NWS",
+   "url": "https://vrt.be/vrtnws/nl/liveblog/premier-roept-maandag-partijvoorzitters-bijeen-vooruit-komt-enk~1793247532380",
+   "date": "2026-11-26"
+  },
+  {
+   "id": "S9",
+   "section": "politics",
+   "title": "EU leaders leave Brussels with no budget deal, piling pressure on Christmas summit",
+   "publisher": "EUobserver",
+   "url": "https://euobserver.com/252027/eu-leaders-leave-brussels-with-no-budget-deal-piling-pressure-on-christmas-summit/",
+   "date": "2026-11-27"
+  },
+  {
+   "id": "S10",
+   "section": "politics",
+   "title": "Live - EU summit: Macron threatens to end budget talks if no deal in December",
+   "publisher": "Euronews",
+   "url": "https://www.euronews.com/2026/11/26/eu-summit-leaders-ready-to-spar-over-new-budget-and-ukraine-aid",
+   "date": "2026-11-26"
+  },
+  {
+   "id": "S11",
+   "section": "politics",
+   "title": "Next EU budget proving to be a more difficult beast",
+   "publisher": "RTÉ",
+   "url": "https://www.rte.ie/news/2026/1126/1600833-comment-analysis-eu-budget/",
+   "date": "2026-11-26"
+  },
+  {
+   "id": "S12",
+   "section": "politics",
+   "title": "China and other U.S. trading partners hit back at Trump's new tariff plans",
+   "publisher": "MPR News (Associated Press)",
+   "url": "https://www.mprnews.org/story/2026/11/26/china-and-other-us-trading-partners-hit-back-at-trumps-new-tariff-plans",
+   "date": "2026-11-26"
+  },
+  {
+   "id": "S13",
+   "section": "politics",
+   "title": "Ukraine, Europe, and US Ready for New Round of Talks, While Russia Has Yet to Give Final Answer",
+   "publisher": "urgent.news",
+   "url": "https://urgent.news/2026/11/26/ukraine-europe-and-us-ready-for-new-round-of-talks-while-russia-has",
+   "date": "2026-11-26"
+  },
+  {
+   "id": "S14",
+   "section": "politics",
+   "title": "Spain election 29N: Four leaders face off in final televised debate",
+   "publisher": "In Spain News",
+   "url": "https://inspain.news/spain-election-29n-debate/",
+   "date": "2026-11-26"
+  },
+  {
+   "id": "S15",
+   "section": "energy",
+   "title": "Belpex live",
+   "publisher": "energyprices.be",
+   "url": "https://energyprices.be/",
+   "date": "2026-11-26"
+  },
+  {
+   "id": "S16",
+   "section": "energy",
+   "title": "Belpex prijzen vandaag",
+   "publisher": "CallMePower",
+   "url": "https://callmepower.be/nl/energie/gids/energiemarkt/belpex",
+   "date": "2026-11-26"
+  },
+  {
+   "id": "S17",
+   "section": "energy",
+   "title": "EU Natural Gas - Price - Chart - Historical Data - News",
+   "publisher": "Trading Economics",
+   "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
+   "date": "2026-11-26"
+  },
+  {
+   "id": "S18",
+   "section": "energy",
+   "title": "European Natural Gas Futures Surge and Retreat",
+   "publisher": "Longbridge (Wallstreetcn)",
+   "url": "https://longbridge.com/en/news/306934760",
+   "date": "2026-11-26"
+  },
+  {
+   "id": "S19",
+   "section": "energy",
+   "title": "Les verrous sont levés, une entreprise pourrait investir demain dans une petite centrale nucléaire",
+   "publisher": "La Libre",
+   "url": "https://lalibre.be/economie/conjoncture/2026/11/24/les-verrous-sont-leves-une-entreprise-pourrait-investir-demain-dans-une-petite-centrale-nucleaire-CC75Z2H6RNBY3O35FHW5SNPUO4",
+   "date": "2026-11-24"
+  },
+  {
+   "id": "S20",
+   "section": "energy",
+   "title": "Belgian State and ENGIE extend nuclear Heads of Terms target date to 12 December 2026",
+   "publisher": "EuropaWire",
+   "url": "https://news.europawire.eu/belgian-state-and-engie-extend-nuclear-heads-of-terms-target-date-to-12-december-2026/eu-press-release/2026/11/06/13/13/10/186474/",
+   "date": "2026-11-06"
+  },
+  {
+   "id": "S21",
+   "section": "term",
+   "title": "Volvo Cars trains Hexagon Robotics' humanoids for manufacturing in Ghent",
+   "publisher": "New Mobility News",
+   "url": "https://newmobility.news/en/2026/11/26/volvo-cars-trains-hexagon-robotics-humanoids-for-manufacturing-in-ghent/",
+   "date": "2026-11-26"
+  }
+ ]
+}
